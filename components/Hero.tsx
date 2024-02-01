@@ -11,8 +11,7 @@ const Hero = (props: Props) => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: 0.6}}
-      id="/"
-      className="relative w-full h-[650px] md:h-[580px] xl:h-[500px] flex items-center justify-center"
+      className="relative w-full h-[80vh] md:h-[75vh] flex items-center justify-center"
     >
       <div className="px-14 text-center space-y-[25px]">
         <h1 className="heading">

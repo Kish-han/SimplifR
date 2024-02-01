@@ -17,6 +17,7 @@ const NavBar = (props: Props) => {
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0}}
       transition={{ duration: 0.8 }}
+      id="/"
       className="h-[80px]"
     >
       <nav className="fixed top-0 z-10 h-[80px] w-full flex justify-between items-center px-8">

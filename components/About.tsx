@@ -4,7 +4,7 @@ type Props = {}
 
 const About = (props: Props) => {
   return (
-    <div id='about'>About</div>
+    <div id='about' className='mt-[400px] md:mt-[200px]'>About</div>
   )
 }
 
