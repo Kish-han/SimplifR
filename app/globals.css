@@ -97,7 +97,7 @@
     );
   }
   .heading {
-    @apply lg:text-[30px] xl:text-5xl not-italic font-extrabold leading-[58px];
+    @apply text-[25px] md:text-[35px] xl:text-5xl not-italic font-bold xl:font-extrabold leading-[32px] md:leading-[48px] xl:leading-[58px];
   }
   .btn {
     @apply px-3 py-2 rounded-md;
