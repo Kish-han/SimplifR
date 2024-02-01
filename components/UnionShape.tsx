@@ -28,9 +28,9 @@ const UnionShape = (props: Props) => {
           />
         </svg>
         <motion.div
-          initial={{ opacity: 0, x: "200" }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.9, delay: 0.3 }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
           className="absolute top-[65%] lg:top-[45%] xl:top-[40%] space-y-5 bg-white dark:bg-[#25232C] pb-10"
         >
@@ -40,13 +40,7 @@ const UnionShape = (props: Props) => {
               that drive real results for our clients.
             </p>
           </div>
-          <motion.div
-            initial={{ opacity: 0, x: "-400px" }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="flex flex-col md:flex-row items-center w-[88%] md:w-[65%] lg:w-[50%] mx-auto text-center md:text-left space-y-4 md:space-x-4"
-          >
+          <div className="flex flex-col md:flex-row items-center w-[88%] md:w-[65%] lg:w-[50%] mx-auto text-center md:text-left space-y-4 md:space-x-4">
             <div className="w-[100px] md:w-[300px]">
               <Image
                 src="/images/seal.png"
@@ -65,7 +59,7 @@ const UnionShape = (props: Props) => {
                 strive to exceed expectations and deliver a fabulous result.
               </p>
             </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </motion.div>
