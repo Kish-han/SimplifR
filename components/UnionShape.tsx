@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+
 type Props = {};
 
 const UnionShape = (props: Props) => {
@@ -27,11 +28,7 @@ const UnionShape = (props: Props) => {
             d="M1440 251.359C1459.53 233.871 1470 215.371 1470 196.232C1470 87.856 1134.21 0 720 0C305.786 0 -30 87.856 -30 196.232C-30 215.371 -19.5275 233.871 0 251.359V653H1440V251.359Z"
           />
         </svg>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
+        <div
           className="absolute top-[65%] lg:top-[45%] xl:top-[40%] space-y-5 bg-white dark:bg-[#25232C] pb-10"
         >
           <div className="font-bold md:text-[20px] w-[88%] md:w-[60%] lg:w-[55%] mx-auto text-center">
@@ -60,7 +57,7 @@ const UnionShape = (props: Props) => {
               </p>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );
