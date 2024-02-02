@@ -6,7 +6,7 @@ import { Scrollbar } from "react-scrollbars-custom";
 
 export default function Home() {
   return (
-    <div className="relative customNavbar">
+    <div className="relative customNavbar overflow-x-hidden">
       <Hero />
       <UnionShape />
       <About />

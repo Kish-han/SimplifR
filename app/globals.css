@@ -16,7 +16,13 @@
   background: #b140ff;
   border: 5px solid transparent;
   border-radius: 10px;
-  /* background-clip: content-box; */
+}
+
+.gradient {
+  color: var(
+    --Gradient,
+    linear-gradient(131deg, #713fff 15.09%, #b140ff 73.66%)
+  );
 }
 
 @layer base {
@@ -122,5 +128,8 @@
       --Gradient,
       linear-gradient(131deg, #713fff 15.09%, #b140ff 73.66%)
     );
+  }
+  .serviceCard {
+    @apply bg-white backdrop-blur-[20px] rounded-[12px] border-0 border-solid border-[rgba(255,255,255,0.75)];
   }
 }
