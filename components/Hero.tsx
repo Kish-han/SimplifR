@@ -10,8 +10,8 @@ const Hero = (props: Props) => {
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.8, delay: 0.6}}
-      className="relative w-full h-[76vh] flex items-center justify-center"
+      transition={{ duration: 0.8, delay: 0.6 }}
+      className="relative scrollbar w-full h-[76vh] flex items-center justify-center"
     >
       <div className="px-14 text-center space-y-[25px]">
         <h1 className="heading">

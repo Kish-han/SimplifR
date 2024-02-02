@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { ModeToggle } from "./ModeToggle";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -11,16 +11,34 @@ type Props = {};
 const NavBar = (props: Props) => {
   const [active, setActive] = useState("Home");
   const [navOpen, setNavOpen] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const transitionNavBar = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavBar);
+    return () => {
+      window.removeEventListener("scroll", transitionNavBar);
+    };
+  },[]);
 
   return (
     <motion.div
       initial={{ opacity: 0, y: -100 }}
-      animate={{ opacity: 1, y: 0}}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       id="/"
-      className="h-[80px]"
+      className="h-[80px] "
     >
-      <nav className="fixed top-0 z-10 h-[80px] w-full flex justify-between items-center px-8">
+      <nav
+        className={`fixed ${show? "navcarddark rounded-none":"bg-transparent"}  top-0 z-10 h-[80px] w-full flex justify-between items-center px-8`}
+      >
         <div className="">SimplyR</div>
         <div className="w-[50%] ">
           <ul

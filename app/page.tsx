@@ -2,10 +2,11 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import UnionShape from "@/components/UnionShape";
 import Image from "next/image";
+import { Scrollbar } from "react-scrollbars-custom";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative customNavbar">
       <Hero />
       <UnionShape />
       <About />

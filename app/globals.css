@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: radial-gradient(
+    384.58% 148.53% at 1.07% 13.33%,
+    rgba(176, 175, 175, 0.21) 0%,
+    rgba(106, 106, 106, 0.06) 100%
+  );
+}
+::-webkit-scrollbar-thumb {
+  background: #b140ff;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  /* background-clip: content-box; */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,7 +93,7 @@
   body {
     @apply bg-[#fafaff] dark:bg-[#25232C] text-foreground;
   }
-  .navLinks{
+  .navLinks {
     @apply px-3 py-1 rounded-xl hover:scale-95 transition-all duration-300;
   }
   .navcard {
