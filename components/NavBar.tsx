@@ -30,14 +30,14 @@ const NavBar = (props: Props) => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: -100 }}
+      initial={{ opacity: 0, y: -200 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       id="/"
-      className="h-[80px] "
+      className="pb-[10px] "
     >
       <nav
-        className={`fixed ${show? "navcarddark rounded-none":"bg-transparent"}  top-0 z-10 h-[80px] w-full flex justify-between items-center px-8`}
+        className={`fixed ${show? "navcarddark rounded-none":"bg-transparent"}  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
         <div className="">SimplyR</div>
         <div className="w-[50%] ">

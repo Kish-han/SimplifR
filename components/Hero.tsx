@@ -13,7 +13,7 @@ const Hero = (props: Props) => {
       transition={{ duration: 0.8, delay: 0.6 }}
       className="relative scrollbar w-full h-[76vh] flex items-center justify-center"
     >
-      <div className="px-14 text-center space-y-[25px]">
+      <div className="px-14 text-center space-y-[25px] pt-[80px]">
         <h1 className="heading">
           Welcome to <span className="text-highlight">Simplifyr</span>,
           <br />

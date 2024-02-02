@@ -1,15 +1,16 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
 import UnionShape from "@/components/UnionShape";
-import Image from "next/image";
-import { Scrollbar } from "react-scrollbars-custom";
+import OurServices from "@/components/OurServices";
+
 
 export default function Home() {
   return (
-    <div className="relative customNavbar overflow-x-hidden">
+    <div className="relative overflow-x-hidden ">
       <Hero />
       <UnionShape />
       <About />
+      <OurServices />
     </div>
   );
 }

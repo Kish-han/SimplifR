@@ -18,11 +18,9 @@
   border-radius: 10px;
 }
 
-.gradient {
-  color: var(
-    --Gradient,
-    linear-gradient(131deg, #713fff 15.09%, #b140ff 73.66%)
-  );
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 @layer base {
