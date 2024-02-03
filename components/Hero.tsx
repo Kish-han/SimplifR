@@ -11,7 +11,7 @@ const Hero = (props: Props) => {
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: 1 }}
-      className="relative scrollbar w-full h-[88vh] md:h-[76vh] flex items-center justify-center"
+      className="relative scrollbar w-full h-[85vh] md:h-[76vh] flex items-center justify-center"
     >
       <div className="px-14 text-center space-y-[25px] pt-[80px]">
         <h1 className="heading">

@@ -26,18 +26,21 @@ const NavBar = (props: Props) => {
     return () => {
       window.removeEventListener("scroll", transitionNavBar);
     };
-  },[]);
+  }, []);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: "-200" }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
+    <div
       id="/"
       className="pb-[10px] "
     >
-      <nav
-        className={`fixed ${show? "navcarddark rounded-none":"bg-transparent"}  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
+      <motion.nav
+      initial={{ opacity: 0, y: "-200" }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7}}
+      viewport={{ once: true }}
+        className={`fixed ${
+          show ? "navcarddark rounded-none" : "bg-transparent"
+        }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
         <div className="">SimplyR</div>
         <div className="w-[50%] ">
@@ -76,10 +79,10 @@ const NavBar = (props: Props) => {
             </li>
             <li
               className={`navLinks ${
-                active === "Serices" && "bg-highlight text-white"
+                active === "Services" && "bg-highlight text-white"
               }`}
               onClick={() => {
-                setActive("Serices");
+                setActive("Services");
                 setNavOpen(false);
               }}
             >
@@ -120,8 +123,8 @@ const NavBar = (props: Props) => {
             />
           </div>
         </div>
-      </nav>
-    </motion.div>
+      </motion.nav>
+    </div>
   );
 };
 
