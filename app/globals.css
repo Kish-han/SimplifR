@@ -130,4 +130,7 @@
   .serviceCard {
     @apply bg-white backdrop-blur-[20px] rounded-[12px] border-0 border-solid border-[rgba(255,255,255,0.75)];
   }
+  .visionCard{
+    @apply rounded-md flex flex-col items-center justify-center space-y-4 px-8 hover:scale-105 cursor-pointer transition-all duration-300 shadow-sm shadow-gray-400 dark:shadow-white;
+  }
 }

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import UnionShape from "@/components/UnionShape";
 import OurServices from "@/components/OurServices";
 import Vision from "@/components/Vision";
+import Contact from "@/components/Contact";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <About />
       <OurServices />
       <Vision />
+      <Contact />
     </div>
   );
 }

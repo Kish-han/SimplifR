@@ -14,48 +14,82 @@ const Services = (props: Props) => {
         className="flex justify-center items-center "
       >
         <TabsList className="h-full flex flex-col space-y-8 ">
-          <TabsTrigger className="serviceCard space-x-8" value="account">
-            <Image
-              className="w-[20%]"
-              src="/images/AccLogo.png"
-              width={50}
-              height={50}
-              alt="acclogo"
-            />
-            <p className="w-[80%]">Accounting Made Simple</p>
-          </TabsTrigger>
-          <TabsTrigger className="serviceCard space-x-8" value="hrms">
-            <Image
-              className="w-[20%]"
-              src="/images/SoftwareLogo.png"
-              width={50}
-              height={50}
-              alt="acclogo"
-            />
-            <p className="w-[80%]">Software Redefined</p>
-          </TabsTrigger>
-          <TabsTrigger className="serviceCard space-x-8" value="hr">
-            <Image
-              className="w-[20%]"
-              src="/images/HrLogo.png"
-              width={50}
-              height={50}
-              alt="acclogo"
-            />
-            <p className="w-[80%]">HR Soultions</p>
-          </TabsTrigger>
-          <TabsTrigger className="serviceCard space-x-8" value="web">
-            <Image
-              className="w-[20%]"
-              src="/images/WebLogo.png"
-              width={50}
-              height={50}
-              alt="acclogo"
-            />
-            <p className="w-[80%]">Webdevelopment</p>
-          </TabsTrigger>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+            viewport={{ once: true }}
+          >
+            <TabsTrigger className="serviceCard space-x-8" value="account">
+              <Image
+                className="w-[20%]"
+                src="/images/AccLogo.png"
+                width={50}
+                height={50}
+                alt="acclogo"
+              />
+              <p className="w-[80%]">Accounting Made Simple</p>
+            </TabsTrigger>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <TabsTrigger className="serviceCard space-x-8" value="hrms">
+              <Image
+                className="w-[20%]"
+                src="/images/SoftwareLogo.png"
+                width={50}
+                height={50}
+                alt="acclogo"
+              />
+              <p className="w-[80%]">Software Redefined</p>
+            </TabsTrigger>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <TabsTrigger className="serviceCard space-x-8" value="hr">
+              <Image
+                className="w-[20%]"
+                src="/images/HrLogo.png"
+                width={50}
+                height={50}
+                alt="acclogo"
+              />
+              <p className="w-[80%]">HR Soultions</p>
+            </TabsTrigger>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <TabsTrigger className="serviceCard space-x-8" value="web">
+              <Image
+                className="w-[20%]"
+                src="/images/WebLogo.png"
+                width={50}
+                height={50}
+                alt="acclogo"
+              />
+              <p className="w-[80%]">Webdevelopment</p>
+            </TabsTrigger>
+          </motion.div>
         </TabsList>
-        <div className="px-8 hidden lg:block">
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9 }}
+          viewport={{ once: true }}
+          className="px-8 hidden lg:block"
+        >
           <TabsContent value="account">
             <Image
               className="w-[250px] xl:w-[300px] mx-auto"
@@ -88,8 +122,8 @@ const Services = (props: Props) => {
               management. We simplify the complexities of HR tasks, from
               employee onboarding to payroll processing. Enjoy a seamless
               experience that enables you to focus on fostering a thriving
-              workplace culture. &#34;Streamline Your Workforce with Simplifyr&#39;s
-              HRMS Software&#34;.
+              workplace culture. &#34;Streamline Your Workforce with
+              Simplifyr&#39;s HRMS Software&#34;.
             </p>
           </TabsContent>
           <TabsContent value="hr">
@@ -101,7 +135,8 @@ const Services = (props: Props) => {
               alt="acclogo"
             />
             <p className="text-center">
-              Our HR services are crafted to lift the burdens of managing your workforce, allowing you to concentrate on what truly
+              Our HR services are crafted to lift the burdens of managing your
+              workforce, allowing you to concentrate on what truly
               matters—strategic growth. Explore our comprehensive HR solutions
               tailored to cover critical areas and provide you with the peace of
               mind you need for your business journey. “Simplify your HR
@@ -122,11 +157,11 @@ const Services = (props: Props) => {
               intuitive, and user-friendly websites. We believe in simplicity
               without compromising on functionality. Let your online presence
               shine with websites that not only look great but also deliver a
-              hassle-free user experience. &#34;Elevate Online Success: Simplifyr&#39;s
-              Web Development Solutions&#34;.
+              hassle-free user experience. &#34;Elevate Online Success:
+              Simplifyr&#39;s Web Development Solutions&#34;.
             </p>
           </TabsContent>
-        </div>
+        </motion.div>
       </Tabs>
     </div>
   );
