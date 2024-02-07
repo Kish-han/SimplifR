@@ -43,11 +43,11 @@ const NavBar = (props: Props) => {
         }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
         <div className="">SimplyR</div>
-        <div className="w-[50%] ">
+        <div className="w-[50%]">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:relative ${
               navOpen ? "right-0 lg:right-0" : "right-[-200px] lg:right-0"
-            } top-0 h-[300px] lg:h-full justify-around items-center navcard dark:navcarddark  font-[500] text-[14px] px-8 py-3 shadow-lg z-[50] transition-all duration-300 ease-in-out`}
+            } top-0 h-[300px]  lg:h-full justify-around items-center   font-[500] text-[14px] lg:px-8 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out`}
           >
             <AiOutlineClose
               className="absolute top-2 right-2 h-10 text-[20px] lg:hidden"
@@ -57,7 +57,7 @@ const NavBar = (props: Props) => {
             />
             <li
               className={`navLinks mt-8 lg:mt-0 ${
-                active === "Home" && "bg-highlight text-white"
+                active === "Home" && " bg-highlight text-white"
               }`}
               onClick={() => {
                 setActive("Home");

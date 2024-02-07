@@ -6,8 +6,8 @@ type Props = {}
 
 const OurServices = (props: Props) => {
   return (
-    <div id='services' className='h-[100vh]'>
-        <Headings head={"Our Services"} subhead={"WHAT WE OFFER"} />
+    <div id='services' className='h-[100vh] mt-[50px] md:mt-[0px]'>
+        <Headings head={"Our Services"} />
         <Services />
     </div>
   )

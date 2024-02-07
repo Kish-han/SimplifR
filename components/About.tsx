@@ -8,17 +8,17 @@ const About = (props: Props) => {
   return (
     <div
       id="about"
-      className=" h-[100vh] lg:pt-[100px] mt-[340px] md:mt-[200px] lg:mt-[100px] xl:mt-0"
+      className=" h-[90vh] md:h-[88vh] mt-[250px] md:mt-[200px] lg:mt-[100px] xl:mt-0"
     >
-      <Headings head={"About Us"} subhead={"WHO ARE WE"} />
+      <Headings head={"About Us"} />
       <div className="flex  justify-center items-center">
-        <div className="w-[80%] xl:w-[60%] space-y-8 mt-[35px] lg:mt-[60px]">
+        <div className="w-[80%] xl:w-[60%] space-y-8 mt-[35px] lg:mt-[50px]">
           <motion.p
             initial={{ opacity: 0, y: 200 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1.3, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-[14px]"
+            className="text-[14px] md:text-[16px]"
           >
             In the realm of accounting, we take the intricacies out of your
             financial management, offering intuitive solutions that bring
@@ -34,7 +34,7 @@ const About = (props: Props) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1.3, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-[14px]"
+            className="text-[14px] md:text-[16px]"
           >
             Our commitment goes beyond just simplifying tasks; we aim to empower
             your business with straightforward solutions that cut through the
@@ -49,7 +49,7 @@ const About = (props: Props) => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ ease: "easeOut", duration: 1.3, delay: 0.7 }}
             viewport={{ once: true }}
-            className="text-[14px] hidden md:block"
+            className="text-[14px] md:text-[16px]"
           >
             Join us on a journey where complexity meets simplicity, and let
             Simplifyr be your trusted partner in achieving operational

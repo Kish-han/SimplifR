@@ -2,6 +2,7 @@
 import React from "react";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -24,10 +25,12 @@ const Hero = (props: Props) => {
           enhancing efficiency across various domains.
         </h3>
         <button className="group btn items-center justify-center text-sm font-medium leading-5 text-white hover:scale-105 transition-all duration-300">
-          <div className="flex items-center space-x-2">
-            <p>Get Started</p>
-            <HiOutlineArrowSmallRight className="text-[20px] group-hover:-rotate-45 transition-all duration-300" />
-          </div>
+          <Link href="#contact">
+            <div className="flex items-center space-x-2">
+              <p>Get Started</p>
+              <HiOutlineArrowSmallRight className="text-[20px] group-hover:-rotate-45 transition-all duration-300" />
+            </div>
+          </Link>
         </button>
       </div>
     </motion.div>

@@ -8,7 +8,7 @@ type Props = {};
 
 const Services = (props: Props) => {
   return (
-    <div className="mt-5 w-[80%] mx-auto ">
+    <div className="mt-10 w-[80%] mx-auto ">
       <Tabs
         defaultValue="account"
         className="flex justify-center items-center "

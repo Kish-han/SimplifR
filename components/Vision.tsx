@@ -6,9 +6,9 @@ type Props = {};
 
 const Vision = (props: Props) => {
   return (
-    <div id="ourvision" className="lg:h-[120vh] w-[100%] pb-10">
-      <Headings head={"Our Vision"} subhead={"WHAT WE OFFER"} />
-      <div className="hidden lg:block w-[80%] h-[90vh] mt-5 mx-auto text-center space-y-7">
+    <div id="ourvision" className="lg:h-[100vh] w-[100%] pb-10">
+      <Headings head={"Our Vision"}/>
+      <div className="hidden lg:block w-[80%] h-[70vh] mt-5 mx-auto text-center space-y-7">
         <div className="flex h-[70%] space-x-5">
           <div className="w-[70%] space-y-3">
             <motion.div
