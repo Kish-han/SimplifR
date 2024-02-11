@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div id="about" className="py-4 pb-16 bg-red-600">
+    <div id="about" className="py-4 pb-16">
       <Headings head={"About Us"} />
       <div className="flex justify-center items-center">
         <div className="w-[80%] xl:w-[60%] space-y-8 mt-[35px] lg:mt-[50px]">

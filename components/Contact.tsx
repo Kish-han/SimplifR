@@ -80,7 +80,7 @@ const Contact = (props: Props) => {
   };
 
   return (
-    <div id="contact" className=" px-12 py-4">
+    <div id="contact" className=" px-12 pt-[-30px]">
       <Headings head="Contact" />
       <div className="flex flex-col lg:flex-row justify-between py-5">
         <div className=" w-[100%] lg:w-[40%]  mx-auto lg:mx-8 mt-12 lg:mt-5 px-5 py-6 navcard dark:navcarddark shadow-lg order-2">
