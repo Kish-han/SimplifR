@@ -10,7 +10,7 @@ const UnionShape = (props: Props) => {
     <motion.div
       initial={{ opacity: 0, y: "200" }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7}}
+      transition={{ duration: 0.7 }}
       viewport={{ once: true }}
       className=" relative w-full "
     >
@@ -28,30 +28,31 @@ const UnionShape = (props: Props) => {
           />
         </svg>
         <div className="absolute w-[100%] mx-auto top-[65%] lg:top-[45%] xl:top-[40%] space-y-5 bg-white dark:bg-[#25232C] pb-10">
-          <div className="font-bold md:text-[20px] w-[80%] md:w-[50%] mx-auto text-center">
+          {/* <h2 className="text-[30px] z-[1000]">Our clients</h2> */}
+          <div className=" font-bold md:text-[20px] w-[80%] md:w-[50%] mx-auto text-center">
             <p>
               At Simplify we pride ourselves on delivering exceptional solutions
               that drive real results for our clients.
             </p>
-          </div>
-          <div className="flex flex-col md:flex-row items-center w-[80%] md:w-[50%] mx-auto text-center md:text-left space-y-4 md:space-x-4">
-            <div className="w-[100px] md:w-[300px]">
-              <Image
-                src="/images/seal.png"
-                className="-rotate-12"
-                width={150}
-                height={150}
-                sizes="10vw "
-                style={{ width: "100%", height: "auto" }}
-                alt="Seal image"
-              />
-            </div>
-            <div className="text-[14px]">
-              <p>
-                Our team of talented people work hand-in-hand with clients to
-                create impactful results that resonate with their needs. we
-                strive to exceed expectations and deliver a fabulous result.
-              </p>
+            <div className="flex flex-col md:flex-row items-center w-[100%] mx-auto text-center md:text-left space-y-4 md:space-x-4">
+              <div className="w-[100px] md:w-[300px]">
+                <Image
+                  src="/images/seal.png"
+                  className="-rotate-12"
+                  width={150}
+                  height={150}
+                  sizes="10vw "
+                  style={{ width: "100%", height: "auto" }}
+                  alt="Seal image"
+                />
+              </div>
+              <div className="text-[14px]">
+                <p>
+                  Our team of talented people work hand-in-hand with clients to
+                  create impactful results that resonate with their needs. we
+                  strive to exceed expectations and deliver a fabulous result.
+                </p>
+              </div>
             </div>
           </div>
         </div>

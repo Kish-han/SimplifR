@@ -4,6 +4,7 @@ import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 type Props = {};
 
 const Services = (props: Props) => {
@@ -107,6 +108,11 @@ const Services = (props: Props) => {
               `&#34;`Simplify Your Finances with Simplifyr`&#39;`s Accounting
               Expertise`&#34;`
             </p>
+            <div className="bg-highlight text-center mx-auto w-[120px] mt-[9px] rounded-md py-0.5 shadow-xl cursor-pointer">
+              <Link href="#">
+                <p className="">Know more</p>
+              </Link>
+            </div>
           </TabsContent>
           <TabsContent value="hrms">
             <Image

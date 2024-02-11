@@ -1,19 +1,19 @@
 import About from "@/components/About";
-import Hero from "@/components/Hero";
-import UnionShape from "@/components/UnionShape";
-import OurServices from "@/components/OurServices";
-import Vision from "@/components/Vision";
 import Contact from "@/components/Contact";
-
+import Hero from "@/components/Hero";
+import NavBar from "@/components/NavBar";
+import OurServices from "@/components/OurServices";
+import UnionShape from "@/components/UnionShape";
 
 export default function Home() {
   return (
     <div className="relative overflow-x-hidden ">
+      <NavBar />
       <Hero />
       <UnionShape />
-      <About />
       <OurServices />
-      <Vision />
+      <About />
+      {/* <Vision /> */}
       <Contact />
     </div>
   );

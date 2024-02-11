@@ -6,7 +6,7 @@ type Props = {};
 
 const Headings = ({ head }: { head: string}) => {
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[70px]">
       <motion.div
         initial={{ opacity: 0, x: 200 }}
         whileInView={{ opacity: 1, x: 0 }}

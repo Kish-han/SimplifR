@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { ModeToggle } from "./ModeToggle";
-import Link from "next/link";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { AiOutlineClose } from "react-icons/ai";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { AiOutlineClose } from "react-icons/ai";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { ModeToggle } from "./ModeToggle";
 type Props = {};
 
 const NavBar = (props: Props) => {
@@ -29,32 +29,29 @@ const NavBar = (props: Props) => {
   }, []);
 
   return (
-    <div
-      id="/"
-      className="pb-[10px] "
-    >
+    <div id="/" className="pb-[10px] ">
       <motion.nav
-      initial={{ opacity: 0, y: "-200" }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.7}}
-      viewport={{ once: true }}
+        initial={{ opacity: 0, y: "-200" }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
         className={`fixed ${
           show ? "navcarddark rounded-none" : "bg-transparent"
         }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
         <div className="">SimplyR</div>
-        <div className="w-[50%]">
+        <div className="w-[40%]">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:relative ${
               navOpen ? "right-0 lg:right-0" : "right-[-200px] lg:right-0"
-            } top-0 h-[300px]  lg:h-full justify-around items-center   font-[500] text-[14px] lg:px-8 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out`}
+            } top-0 h-[300px]  lg:h-full justify-around items-center font-[500] text-[14px] lg:px-5 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out`}
           >
             <AiOutlineClose
               className="absolute top-2 right-2 h-10 text-[20px] lg:hidden"
               onClick={() => {
                 setNavOpen(false);
               }}
-            />
+            /> 
             <li
               className={`navLinks mt-8 lg:mt-0 ${
                 active === "Home" && " bg-highlight text-white"
@@ -65,17 +62,6 @@ const NavBar = (props: Props) => {
               }}
             >
               <Link href="/">Home</Link>
-            </li>
-            <li
-              className={`navLinks ${
-                active === "About" && "bg-highlight text-white"
-              }`}
-              onClick={() => {
-                setActive("About");
-                setNavOpen(false);
-              }}
-            >
-              <Link href="#about">About</Link>
             </li>
             <li
               className={`navLinks ${
@@ -90,6 +76,17 @@ const NavBar = (props: Props) => {
             </li>
             <li
               className={`navLinks ${
+                active === "About" && "bg-highlight text-white"
+              }`}
+              onClick={() => {
+                setActive("About");
+                setNavOpen(false);
+              }}
+            >
+              <Link href="#about">About</Link>
+            </li>
+            {/* <li
+              className={`navLinks ${
                 active === "Vision" && "bg-highlight text-white"
               }`}
               onClick={() => {
@@ -98,7 +95,7 @@ const NavBar = (props: Props) => {
               }}
             >
               <Link href="#ourvision">Our Vision</Link>
-            </li>
+            </li> */}
             <li
               className={`navLinks ${
                 active === "Contact" && "bg-highlight text-white"

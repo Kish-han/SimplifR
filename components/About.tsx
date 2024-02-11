@@ -6,12 +6,9 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div
-      id="about"
-      className=" h-[90vh] md:h-[88vh] mt-[250px] md:mt-[200px] lg:mt-[100px] xl:mt-0"
-    >
+    <div id="about" className="py-4 pb-16 bg-red-600">
       <Headings head={"About Us"} />
-      <div className="flex  justify-center items-center">
+      <div className="flex justify-center items-center">
         <div className="w-[80%] xl:w-[60%] space-y-8 mt-[35px] lg:mt-[50px]">
           <motion.p
             initial={{ opacity: 0, y: 200 }}

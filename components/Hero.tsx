@@ -1,24 +1,32 @@
 "use client";
-import React from "react";
-import { HiOutlineArrowSmallRight } from "react-icons/hi2";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { HiOutlineArrowSmallRight } from "react-icons/hi2";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 type Props = {};
 
 const Hero = (props: Props) => {
+  const [text] = useTypewriter({
+    words: ["Accounting", "Software Redefined", "HR Solutions", "WebDevelopment"],
+    loop: 0,
+  });
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, delay: 1 }}
-      className="relative scrollbar w-full h-[85vh] md:h-[76vh] flex items-center justify-center"
+      className="relative scrollbar py-16 pt-24"
     >
-      <div className="px-14 text-center space-y-[25px] pt-[80px]">
+      <div className="px-14 text-center space-y-[25px] pt-[80px] ">
         <h1 className="heading">
-          Welcome to <span className="text-highlight">Simplifyr</span>,
+          Welcome to <span className="">SimplifyR</span>,
           <br />
           where complexity meets simplicity
+          <br />
+          in <span className="text-highlight">{text}</span>
+          <Cursor cursorColor='#b140ff' />
         </h1>
         <h3 className="text-[13px] md:text-[16px] lg:text-[20px]">
           we&apos;re dedicated to streamlining your business operations and

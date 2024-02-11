@@ -1,9 +1,8 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import Headings from "./Headings";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import Headings from "./Headings";
 
 type Props = {};
 
@@ -13,6 +12,7 @@ const Contact = (props: Props) => {
   const [form, setForm] = useState({
     name: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -30,7 +30,7 @@ const Contact = (props: Props) => {
   };
 
   useEffect(() => {
-    if (form.name === "" || form.email === "" || form.message === "") {
+    if (form.name === "" || form.email === "" || form.message === "" || form.phone === "") {
       setWritten(false);
     } else {
       setWritten(true);
@@ -39,7 +39,7 @@ const Contact = (props: Props) => {
     return () => {
       setWritten(false);
     };
-  }, [form.name, form.email, form.message]);
+  }, [form.name, form.email, form.message, form.phone]);
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -53,6 +53,7 @@ const Contact = (props: Props) => {
           from_name: form.name,
           to_name: "Kishan",
           from_email: form.email,
+          from_phone: form.phone,
           to_email: "Kishanprasad0901@gmail.com",
           message: form.message,
         },
@@ -66,20 +67,20 @@ const Contact = (props: Props) => {
           setForm({
             name: "",
             email: "",
+            phone: "",
             message: "",
           });
         },
         (error) => {
           setLoading(false);
           console.log(error);
-
           alert("Ahh, something went wrong. Please try again.");
         }
       );
   };
 
   return (
-    <div id="contact" className=" px-16">
+    <div id="contact" className=" px-12 py-4">
       <Headings head="Contact" />
       <div className="flex flex-col lg:flex-row justify-between py-5">
         <div className=" w-[100%] lg:w-[40%]  mx-auto lg:mx-8 mt-12 lg:mt-5 px-5 py-6 navcard dark:navcarddark shadow-lg order-2">
@@ -91,29 +92,40 @@ const Contact = (props: Props) => {
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your good name?"
+                placeholder="What's your good name ?"
                 className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
               />
             </label>
             <label className="flex flex-col mb-5">
-              <span className=" ">Your email</span>
+              <span className="mb-3">Your email</span>
               <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="What's your web address?"
+                placeholder="What's your web address ?"
                 className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
               />
             </label>
             <label className="flex flex-col mb-5">
-              <span className=" ">Your Message</span>
+              <span className="mb-3">Your Phone number</span>
+              <input
+                type="tel"
+                name="phone"
+                value={form.phone}
+                onChange={handleChange}
+                placeholder="What's your ph number ?"
+                className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
+              />
+            </label>
+            <label className="flex flex-col mb-5">
+              <span className="mb-3">Your Message</span>
               <textarea
-                rows={7}
+                rows={4}
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What you want to say?"
+                placeholder="What you want to say ?"
                 className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
               />
             </label>
@@ -136,7 +148,7 @@ const Contact = (props: Props) => {
             </div>
           </form>
         </div>
-        <div className="w-[100%] lg:w-[60%] h-full flex justify-center items-center order-1">
+        <div className="w-[100%] lg:w-[60%] mt-10 h-full flex justify-center items-center order-1">
           <Image
             className="object-fit"
             src="/images/contact.svg"
