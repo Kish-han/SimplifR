@@ -72,7 +72,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="#services">Services</Link>
+              <Link href="/#services">Services</Link>
             </li>
             <li
               className={`navLinks ${
@@ -83,7 +83,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="#about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             {/* <li
               className={`navLinks ${
