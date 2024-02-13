@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       <div className="px-6 pt-20 overflow-x-hidden">
-        <h3 className="text-center heading mt-8">Software</h3>
+        <h3 className="text-center heading mt-8">Web Development</h3>
         <div className="flex justify-center items-center mt-8">
           <Image
             className=" "
@@ -61,7 +61,7 @@ const page = () => {
               Responsive Design
             </h3>
             <p>
-              With the increasing use of mobile devices, it's crucial to ensure
+              With the increasing use of mobile devices, it&#39;s crucial to ensure
               that your website is accessible and functional across various
               screen sizes. WebCrafters prioritizes responsive design, ensuring
               that your website provides a seamless experience for users on
