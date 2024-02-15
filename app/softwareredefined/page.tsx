@@ -29,8 +29,8 @@ const page = (props: Props) => {
         </p>
         <div className="space-y-10 navcard dark:navcarddark px-4 py-6 lg:w-[60%] mx-auto mt-8">
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              HRMS Software
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>HRMS Software</li>
             </h3>
             <p>
               Say goodbye to manual paperwork and complex HR processes. Our HRMS
@@ -42,8 +42,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Project Management Software
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Project Management Software</li>
             </h3>
             <p>
               Keep your projects on track and within budget with our project
@@ -56,8 +56,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Inventory Management Software
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Inventory Management Software</li>
             </h3>
             <p>
               Efficiently manage your inventory levels, reduce stockouts, and
@@ -70,8 +70,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Vehicle Tracking Software
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Vehicle Tracking Software</li>
             </h3>
             <p>
               Gain visibility and control over your fleet operations with our
@@ -84,8 +84,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Custom-Built Software
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Custom-Built Software</li>
             </h3>
             <p>
               Sometimes, off-the-shelf software may not fully meet your unique

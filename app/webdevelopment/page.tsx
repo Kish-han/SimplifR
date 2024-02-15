@@ -27,8 +27,8 @@ const page = () => {
         </p>
         <div className="space-y-10 navcard dark:navcarddark px-4 py-6 lg:w-[60%] mx-auto mt-8">
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              UI/UX Design
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>UI/UX Design</li>
             </h3>
             <p>
               Crafting an exceptional user experience is at the heart of what we
@@ -42,8 +42,8 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Custom Website Development:
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Custom Website Development:</li>
             </h3>
             <p>
               Your website is often the first interaction a potential customer
@@ -57,21 +57,21 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Responsive Design
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Responsive Design</li>
             </h3>
             <p>
-              With the increasing use of mobile devices, it&#39;s crucial to ensure
-              that your website is accessible and functional across various
-              screen sizes. WebCrafters prioritizes responsive design, ensuring
-              that your website provides a seamless experience for users on
-              smartphones, tablets, and desktops.
+              With the increasing use of mobile devices, it&#39;s crucial to
+              ensure that your website is accessible and functional across
+              various screen sizes. WebCrafters prioritizes responsive design,
+              ensuring that your website provides a seamless experience for
+              users on smartphones, tablets, and desktops.
             </p>
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Ongoing Maintenance and Support
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Ongoing Maintenance and Support</li>
             </h3>
             <p>
               A successful online presence requires continuous attention and
@@ -82,7 +82,13 @@ const page = () => {
           </div>
         </div>
         <p className="lg:px-28 mt-8 text-center">
-        Partner with Simplifyr to unlock the potential of your online presence. Our web development solutions empower you to connect with your audience, drive business growth, and stay ahead in the digital landscape. Let us handle the technical aspects, so you can focus on what you do best, running and expanding your business. Choose Simplifyr for all your web development needs and embark on a journey of digital success today!
+          Partner with Simplifyr to unlock the potential of your online
+          presence. Our web development solutions empower you to connect with
+          your audience, drive business growth, and stay ahead in the digital
+          landscape. Let us handle the technical aspects, so you can focus on
+          what you do best, running and expanding your business. Choose
+          Simplifyr for all your web development needs and embark on a journey
+          of digital success today!
         </p>
         <Contact />
       </div>

@@ -25,10 +25,10 @@ const page = (props: Props) => {
           Simplifyr is here with tech-savvy solutions to revolutionize your
           financial operations.
         </p>
-        <div className="space-y-10 navcard dark:navcarddark px-4 py-6 lg:w-[60%] mx-auto mt-8">
+        <div className="space-y-10 navcard dark:navcarddark px-4 py-8 lg:w-[60%] mx-auto mt-8">
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Accounting/Bookkeeping
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Accounting/Bookkeeping</li>
             </h3>
             <p>
               Seamlessly manage daily, monthly, or quarterly bookkeeping needs,
@@ -38,8 +38,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Tax Compliance
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Tax Compliance</li>
             </h3>
             <p>
               Stay up to date with ever-changing tax laws and ensure timely
@@ -49,8 +49,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Payroll Processing
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Payroll Processing</li>
             </h3>
             <p>
               Simplify payroll management with automated processes for income
@@ -60,8 +60,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Company Law & Labour Law Compliance
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Company Law & Labour Law Compliance</li>
             </h3>
             <p>
               Navigate the complexities of company law and labour law with ease,
@@ -71,8 +71,8 @@ const page = (props: Props) => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Finalization of Statutory Accounts
+            <h3 className="text-highlight font-semibold text-[24px] list-disc">
+              <li>Finalization of Statutory Accounts</li>
             </h3>
             <p>
               Let our tech-driven approach streamline the finalization of

@@ -1,14 +1,20 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { HiOutlineArrowSmallRight } from "react-icons/hi2";
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   const [text] = useTypewriter({
-    words: ["Accounting", "Software Redefined", "HR Solutions", "WebDevelopment"],
+    words: [
+      "Accounting",
+      "Software Redefined",
+      "HR Solutions",
+      "WebDevelopment",
+    ],
     loop: 0,
   });
 
@@ -26,13 +32,13 @@ const Hero = (props: Props) => {
           where complexity meets simplicity
           <br />
           in <span className="text-highlight">{text}</span>
-          <Cursor cursorColor='#b140ff' />
+          <Cursor cursorColor="#b140ff" />
         </h1>
         <h3 className="text-[13px] md:text-[16px] lg:text-[20px]">
           we&apos;re dedicated to streamlining your business operations and
           enhancing efficiency across various domains.
         </h3>
-        <button className="group btn items-center justify-center text-sm font-medium leading-5 text-white hover:scale-105 transition-all duration-300">
+        <button className="group btn items-center justify-center text-sm font-medium leading-5 text-white hover:scale-105 transition-all duration-300 mb-10">
           <Link href="#contact">
             <div className="flex items-center space-x-2">
               <p>Get Started</p>
@@ -40,6 +46,35 @@ const Hero = (props: Props) => {
             </div>
           </Link>
         </button>
+        <div className="w-full py-8">
+          <p className="text-18px font-bold">Our Clients</p>
+          <div className="w-[70%] mx-auto flex justify-around items-center">
+            <Image
+              src="/images/logo.webp"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              src="/images/logo1.png"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              src="/images/logo2.png"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              src="/images/logo3.png"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+          </div>
+        </div>
       </div>
     </motion.div>
   );

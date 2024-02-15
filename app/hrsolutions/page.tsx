@@ -26,8 +26,8 @@ const page = () => {
         </p>
         <div className="space-y-10 navcard dark:navcarddark px-4 py-6 lg:w-[60%] mx-auto mt-8">
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Candidate Sourcing
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Candidate Sourcing</li>
             </h3>
             <p>
               Finding qualified candidates can be a time-consuming and
@@ -43,8 +43,8 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Quality Resources
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Quality Resources</li>
             </h3>
             <p>
               We understand that finding quality resources goes beyond just
@@ -60,8 +60,8 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Recruitment Management
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Recruitment Management</li>
             </h3>
             <p>
               Managing the recruitment process can be overwhelming, especially
@@ -76,8 +76,8 @@ const page = () => {
           </div>
 
           <div>
-            <h3 className="text-highlight font-semibold text-[20px] ">
-              Customized Solutions
+            <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+              <li>Customized Solutions</li>
             </h3>
             <p>
               We understand that every organization is unique, with its own set

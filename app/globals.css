@@ -118,7 +118,7 @@
     );
   }
   .heading {
-    @apply text-[22px] md:text-[32px] xl:text-[42px] not-italic font-bold xl:font-bold leading-[32px] md:leading-[48px] xl:leading-[58px];
+    @apply text-[22px] md:text-[32px] xl:text-[42px] not-italic font-semibold xl:font-semibold leading-[32px] md:leading-[48px] xl:leading-[58px];
   }
   .btn {
     @apply px-3 py-2 rounded-md;
