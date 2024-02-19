@@ -103,7 +103,7 @@ const page = (props: Props) => {
           <div className="flex items-center">
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/calculator.svg"
+                src="/images/services/HRMS4.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
@@ -142,7 +142,7 @@ const page = (props: Props) => {
             </div>
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/HRMS4.svg"
+                src="/images/services/HRMS.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
