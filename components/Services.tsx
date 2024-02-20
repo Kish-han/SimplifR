@@ -30,7 +30,9 @@ const Services = (props: Props) => {
                   height={50}
                   alt="acclogo"
                 />
-                <p className="w-[80%]">Accounting Made Simple</p>
+                <p className="w-[80%] font-bold text-[14px]">
+                  Accounting Made Simple
+                </p>
               </TabsTrigger>
             </motion.div>
             <motion.div
@@ -47,7 +49,9 @@ const Services = (props: Props) => {
                   height={50}
                   alt="acclogo"
                 />
-                <p className="w-[80%]">Software Redefined</p>
+                <p className="w-[80%] font-bold text-[14px]">
+                  Software Redefined
+                </p>
               </TabsTrigger>
             </motion.div>
             <motion.div
@@ -64,7 +68,7 @@ const Services = (props: Props) => {
                   height={50}
                   alt="acclogo"
                 />
-                <p className="w-[80%]">HR Soultions</p>
+                <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
               </TabsTrigger>
             </motion.div>
             <motion.div
@@ -81,7 +85,7 @@ const Services = (props: Props) => {
                   height={50}
                   alt="acclogo"
                 />
-                <p className="w-[80%]">Webdevelopment</p>
+                <p className="w-[80%] font-bold text-[14px]">Webdevelopment</p>
               </TabsTrigger>
             </motion.div>
           </TabsList>
@@ -106,10 +110,15 @@ const Services = (props: Props) => {
                 streamline your financial processes. From bookkeeping to
                 financial reporting, our tools are crafted to simplify every
                 aspect of your accounting needs. Experience transparency and
-                control like never before. &#34;Simplify Your Finances with
-                Simplifyr&#39;s Accounting Expertise &#34;
+                control like never before.
+                <span className="font-semibold">
+                  &#34;Simplify Your Finances with Simplifyr&#39;s Accounting
+                  Expertise &#34;
+                </span>
                 <Link href="/accounts">
-                  <span className="px-2 underline text-">Know more</span>
+                  <span className="px-2 underline font-semibold">
+                    Know more
+                  </span>
                 </Link>
               </p>
             </TabsContent>
@@ -127,10 +136,15 @@ const Services = (props: Props) => {
                 workforce management. We simplify the complexities of HR tasks,
                 from employee onboarding to payroll processing. Enjoy a seamless
                 experience that enables you to focus on fostering a thriving
-                workplace culture. &#34;Streamline Your Workforce with
-                Simplifyr&#39;s HRMS Software&#34;.
+                workplace culture.
+                <span className="font-semibold">
+                  &#34;Streamline Your Workforce with Simplifyr&#39;s HRMS
+                  Software&#34;.
+                </span>
                 <Link href="/softwareredefined">
-                  <span className="px-2 underline text-">Know more</span>
+                  <span className="px-2 underline font-semibold">
+                    Know more
+                  </span>
                 </Link>
               </p>
             </TabsContent>
@@ -147,10 +161,14 @@ const Services = (props: Props) => {
                 workforce, allowing you to concentrate on what truly
                 matters—strategic growth. Explore our comprehensive HR solutions
                 tailored to cover critical areas and provide you with the peace
-                of mind you need for your business journey. “Simplify your HR
-                experience with Simplifyr”.
+                of mind you need for your business journey.{" "}
+                <span className="font-semibold">
+                  “Simplify your HR experience with Simplifyr”.
+                </span>
                 <Link href="/hrsolutions">
-                  <span className="px-2 underline text-">Know more</span>
+                  <span className="px-2 underline font-semibold">
+                    Know more
+                  </span>
                 </Link>
               </p>
             </TabsContent>
@@ -168,10 +186,16 @@ const Services = (props: Props) => {
                 intuitive, and user-friendly websites. We believe in simplicity
                 without compromising on functionality. Let your online presence
                 shine with websites that not only look great but also deliver a
-                hassle-free user experience. &#34;Elevate Online Success:
-                Simplifyr&#39;s Web Development Solutions&#34;.
+                hassle-free user experience.{" "}
+                <span className="font-semibold">
+                  {" "}
+                  &#34;Elevate Online Success: Simplifyr&#39;s Web Development
+                  Solutions&#34;.
+                </span>
                 <Link href="/webdevelopment">
-                  <span className="px-2 underline text-">Know more</span>
+                  <span className="px-2 underline font-semibold">
+                    Know more
+                  </span>
                 </Link>
               </p>
             </TabsContent>
@@ -199,7 +223,9 @@ const Services = (props: Props) => {
                     height={50}
                     alt="acclogo"
                   />
-                  <p className="w-[80%]">Accounting Made Simple</p>
+                  <p className="w-[80%] font-bold text-[14px]">
+                    Accounting Made Simple
+                  </p>
                 </TabsTrigger>
               </Link>
             </motion.div>
@@ -218,7 +244,9 @@ const Services = (props: Props) => {
                     height={50}
                     alt="acclogo"
                   />
-                  <p className="w-[80%]">Software Redefined</p>
+                  <p className="w-[80%] font-bold text-[14px]">
+                    Software Redefined
+                  </p>
                 </TabsTrigger>
               </Link>
             </motion.div>
@@ -237,7 +265,7 @@ const Services = (props: Props) => {
                     height={50}
                     alt="acclogo"
                   />
-                  <p className="w-[80%]">HR Soultions</p>
+                  <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
                 </TabsTrigger>
               </Link>
             </motion.div>
@@ -256,95 +284,13 @@ const Services = (props: Props) => {
                     height={50}
                     alt="acclogo"
                   />
-                  <p className="w-[80%]">Webdevelopment</p>
+                  <p className="w-[80%] font-bold text-[14px]">
+                    Webdevelopment
+                  </p>
                 </TabsTrigger>
               </Link>
             </motion.div>
           </TabsList>
-          {/* <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.9 }}
-            viewport={{ once: true }}
-            className="px-8 hidden lg:block"
-          >
-            <TabsContent value="account">
-              <Image
-                className="w-[250px] xl:w-[300px] mx-auto"
-                src="/images/tax.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-              <p className="text-center">
-                Say goodbye to the complexities of financial management.
-                Simplifyr offers intuitive accounting solutions designed to
-                streamline your financial processes. From bookkeeping to
-                financial reporting, our tools are crafted to simplify every
-                aspect of your accounting needs. Experience transparency and
-                control like never before. `&#34;`Simplify Your Finances with
-                Simplifyr`&#39;`s Accounting Expertise`&#34;`
-              </p>
-              <div className="bg-highlight text-center mx-auto w-[120px] mt-[9px] rounded-md py-0.5 shadow-xl cursor-pointer">
-                <Link href="#">
-                  <p className="">Know more</p>
-                </Link>
-              </div>
-            </TabsContent>
-            <TabsContent value="hrms">
-              <Image
-                className="w-[250px] xl:w-[300px] mx-auto"
-                src="/images/hrms.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-              <p className="text-center">
-                Managing human resources has never been this easy.
-                Simplifyr&#39;s HRMS software is your comprehensive solution for
-                workforce management. We simplify the complexities of HR tasks,
-                from employee onboarding to payroll processing. Enjoy a seamless
-                experience that enables you to focus on fostering a thriving
-                workplace culture. &#34;Streamline Your Workforce with
-                Simplifyr&#39;s HRMS Software&#34;.
-              </p>
-            </TabsContent>
-            <TabsContent value="hr">
-              <Image
-                className="w-[250px] xl:w-[300px] mx-auto"
-                src="/images/hr.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-              <p className="text-center">
-                Our HR services are crafted to lift the burdens of managing your
-                workforce, allowing you to concentrate on what truly
-                matters—strategic growth. Explore our comprehensive HR solutions
-                tailored to cover critical areas and provide you with the peace
-                of mind you need for your business journey. “Simplify your HR
-                experience with Simplifyr”.
-              </p>
-            </TabsContent>
-            <TabsContent value="web">
-              <Image
-                className="w-[250px] xl:w-[300px] mx-auto"
-                src="/images/web.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-              <p className="text-center">
-                Embark on a digital journey with Simplifyr&#39;s web development
-                services. Our team of experts is dedicated to creating clean,
-                intuitive, and user-friendly websites. We believe in simplicity
-                without compromising on functionality. Let your online presence
-                shine with websites that not only look great but also deliver a
-                hassle-free user experience. &#34;Elevate Online Success:
-                Simplifyr&#39;s Web Development Solutions&#34;.
-              </p>
-            </TabsContent> */}
-          {/* </motion.div> */}
         </Tabs>
       </div>
     </>

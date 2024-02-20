@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
-const Headings = ({ head }: { head: string}) => {
+const Headings = ({ head }: { head: string }) => {
   return (
     <div className="pt-[70px]">
       <motion.div
@@ -14,7 +14,7 @@ const Headings = ({ head }: { head: string}) => {
         viewport={{ once: true }}
         className="heading text-center"
       >
-        <h2>{head}</h2>
+        <h2 className="font-extrabold">{head}</h2>
       </motion.div>
     </div>
   );

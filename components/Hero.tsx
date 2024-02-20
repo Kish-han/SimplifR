@@ -25,7 +25,7 @@ const Hero = (props: Props) => {
       transition={{ duration: 0.8, delay: 1 }}
       className="relative scrollbar py-16 pt-24"
     >
-      <div className="px-14 text-center space-y-[25px] pt-[80px] ">
+      <div className="px-14 text-center space-y-[25px] pt-[20px]">
         <h1 className="heading">
           Welcome to <span className="">SimplifyR</span>,
           <br />
@@ -46,28 +46,33 @@ const Hero = (props: Props) => {
             </div>
           </Link>
         </button>
-        <div className="w-full py-8">
-          <p className="text-18px font-bold">Our Clients</p>
-          <div className="w-[70%] mx-auto flex justify-around items-center">
+        <div className="w-full py-8 h-[20%]">
+          <p className="text-[24px] font-bold">Our Clients</p>
+          {/* <div className="w-[70%] mx-auto grid grid-flow-row xl:grid-cols-2  justify-around items-center"> */}
+          <div className="grid grid-flow-col justify-around items-center md:px-10 space-x-3 ">
             <Image
+              className="object-contain w-[150px]"
               src="/images/logo.webp"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
+              className="object-contain w-[150px]"
               src="/images/logo1.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
+              className="object-contain w-[150px]"
               src="/images/logo2.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
+              className="object-contain w-[150px]"
               src="/images/logo3.png"
               width={120}
               height={100}

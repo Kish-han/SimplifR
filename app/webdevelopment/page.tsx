@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="px-6 pt-20 overflow-x-hidden">
+      <div className="px-6 pt-12 overflow-x-hidden">
         <h3 className="text-center heading mt-8">Web Development</h3>
         <div className="flex justify-center items-center mt-8">
           <Image
@@ -27,8 +27,8 @@ const page = () => {
         </p>
         <div className="space-y-10 px-4 py-6 lg:w-[80%] mx-auto mt-8">
           <div className="flex items-center">
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-semibold text-[24px] mb-3 ">
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 ">
                 UI/UX Design
               </h3>
               <p>
@@ -60,8 +60,8 @@ const page = () => {
                 alt="acclogo"
               />
             </div>
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-semibold text-[24px] list-disc ">
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] list-disc ">
                 Custom Website Development
               </h3>
               <p>
@@ -77,8 +77,8 @@ const page = () => {
           </div>
 
           <div className="flex items-center">
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-semibold text-[24px] ">
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] ">
                 Responsive Design
               </h3>
               <p>
@@ -108,8 +108,8 @@ const page = () => {
                 alt="acclogo"
               />
             </div>
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-semibold text-[24px]">
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px]">
                 Ongoing Maintenance and Support
               </h3>
               <p>

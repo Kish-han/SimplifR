@@ -138,7 +138,7 @@ const Contact = (props: Props) => {
               {written ? (
                 <button
                   type="submit"
-                  className="bgBlur py-3 px-8 rounded-xl outline-none font-bold shadow-md"
+                  className="bgBlur text-white py-3 px-8 rounded-xl outline-none font-bold shadow-md"
                 >
                   {loading ? "Sending..." : "Send"}
                 </button>

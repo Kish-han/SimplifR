@@ -61,7 +61,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="/">Home</Link>
+              <Link className="font-bold text-[14px]" href="/">Home</Link>
             </li>
             <li
               className={`navLinks ${
@@ -72,7 +72,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="/#services">Services</Link>
+              <Link className="font-bold text-[14px]" href="/#services">Services</Link>
             </li>
             <li
               className={`navLinks ${
@@ -83,7 +83,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="/#about">About</Link>
+              <Link className="font-bold text-[14px]" href="/#about">About</Link>
             </li>
             {/* <li
               className={`navLinks ${
@@ -105,7 +105,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link href="#contact">Contact Us</Link>
+              <Link className="font-bold text-[14px]" href="#contact">Contact Us</Link>
             </li>
           </ul>
         </div>

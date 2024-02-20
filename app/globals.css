@@ -18,7 +18,6 @@
   border-radius: 10px;
 }
 
-
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -118,7 +117,7 @@
     );
   }
   .heading {
-    @apply text-[22px] md:text-[32px] xl:text-[42px] not-italic font-bold xl:font-bold leading-[32px] md:leading-[48px] xl:leading-[58px];
+    @apply text-[22px] md:text-[32px] xl:text-[42px] not-italic font-bold xl:font-[800] leading-[32px] md:leading-[48px] xl:leading-[58px];
   }
   .btn {
     @apply px-3 py-2 rounded-md;
@@ -130,7 +129,7 @@
   .serviceCard {
     @apply bg-white backdrop-blur-[20px] rounded-[12px] border-0 border-solid border-[rgba(255,255,255,0.75)];
   }
-  .visionCard{
+  .visionCard {
     @apply rounded-md flex flex-col items-center justify-center space-y-4 px-8 hover:scale-105 cursor-pointer transition-all duration-300 shadow-sm shadow-gray-400 dark:shadow-white;
   }
 }
