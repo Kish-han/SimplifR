@@ -38,7 +38,7 @@ const Services = (props: Props) => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.2 }}
+              transition={{ duration: 0.9}}
               viewport={{ once: true }}
             >
               <TabsTrigger className="serviceCard space-x-8" value="hrms">
@@ -57,7 +57,7 @@ const Services = (props: Props) => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.4 }}
+              transition={{ duration: 0.9}}
               viewport={{ once: true }}
             >
               <TabsTrigger className="serviceCard space-x-8" value="hr">
@@ -74,7 +74,7 @@ const Services = (props: Props) => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.6 }}
+              transition={{ duration: 0.9 }}
               viewport={{ once: true }}
             >
               <TabsTrigger className="serviceCard space-x-8" value="web">
