@@ -25,7 +25,7 @@ const Hero = (props: Props) => {
       transition={{ duration: 0.8, delay: 1 }}
       className="relative scrollbar py-16 pt-24"
     >
-      <div className="px-14 text-center space-y-[25px] pt-[20px]">
+      <div className="px-14 text-center space-y-[25px] pt-[70px]">
         <h1 className="heading">
           Welcome to <span className="">SimplifyR</span>,
           <br />

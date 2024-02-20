@@ -39,7 +39,7 @@ const NavBar = (props: Props) => {
           show ? "navcarddark rounded-none" : "bg-transparent"
         }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
-        <div className="">SimplyR</div>
+        <div className="text-[20px] text-center font-bold">Simply<span className="text-highlight text-[24px]">R</span>  </div>
         <div className="w-[40%]">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:relative ${
