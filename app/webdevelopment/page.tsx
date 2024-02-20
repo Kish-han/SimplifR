@@ -28,7 +28,7 @@ const page = () => {
         <div className="space-y-10 px-4 py-6 lg:w-[80%] mx-auto mt-8">
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 ">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 UI/UX Design
               </h3>
               <p>
@@ -61,7 +61,7 @@ const page = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] list-disc ">
+              <h3 className="text-highlight font-bold text-[24px] text-center ">
                 Custom Website Development
               </h3>
               <p>
@@ -78,7 +78,7 @@ const page = () => {
 
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] ">
+              <h3 className="text-highlight font-bold text-[24px] text-center">
                 Responsive Design
               </h3>
               <p>
@@ -109,7 +109,7 @@ const page = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px]">
+              <h3 className="text-highlight font-bold text-[24px] text-center">
                 Ongoing Maintenance and Support
               </h3>
               <p>

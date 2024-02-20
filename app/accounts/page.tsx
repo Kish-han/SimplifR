@@ -28,7 +28,7 @@ const page = (props: Props) => {
         <div className="space-y-10  px-4 py-8 lg:w-[80%] mx-auto mt-8">
           <div className="flex  items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Accounting/Bookkeeping
               </h3>
               <p>
@@ -57,7 +57,7 @@ const page = (props: Props) => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Tax Compliance
               </h3>
               <p>
@@ -70,7 +70,7 @@ const page = (props: Props) => {
 
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Payroll Processing
               </h3>
               <p>
@@ -99,7 +99,7 @@ const page = (props: Props) => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Company Law & Labour Law Compliance
               </h3>
               <p>
@@ -112,7 +112,7 @@ const page = (props: Props) => {
 
           <div className="flex  items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Finalization of Statutory Accounts
               </h3>
               <p>

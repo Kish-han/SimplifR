@@ -30,7 +30,7 @@ const page = (props: Props) => {
         <div className="space-y-10 px-4 py-6 lg:w-[80%] mx-auto mt-8">
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 HRMS Software
               </h3>
               <p>
@@ -62,7 +62,7 @@ const page = (props: Props) => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 ">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Project Management Software
               </h3>
               <p>
@@ -78,7 +78,7 @@ const page = (props: Props) => {
 
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 ">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Inventory Management Software
               </h3>
               <p>
@@ -110,7 +110,7 @@ const page = (props: Props) => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Vehicle Tracking Software
               </h3>
               <p>
@@ -126,7 +126,7 @@ const page = (props: Props) => {
 
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Custom-Built Software
               </h3>
               <p>
