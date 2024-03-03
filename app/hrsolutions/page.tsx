@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <div className="px-6 pt-20 overflow-x-hidden">
+      <div className="px-6 pt-10 overflow-x-hidden">
         <h3 className="text-center heading mt-8">HR Solutions</h3>
         <div className="flex justify-center items-center mt-8">
           <Image

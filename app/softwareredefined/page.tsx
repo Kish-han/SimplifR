@@ -7,9 +7,9 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <div className="px-6 pt-20 overflow-x-hidden">
+      <div className="px-6 pt-10 overflow-x-hidden">
         <h3 className="text-center heading mt-8">Software</h3>
-        <div className="flex justify-center items-center mt-8">
+        <div className="flex justify-center items-center mt-8 ">
           <Image
             className=" "
             src="/images/hrms.svg"

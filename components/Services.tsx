@@ -10,12 +10,28 @@ type Props = {};
 const Services = (props: Props) => {
   return (
     <>
-      <div className="mt-10 w-[80%] mx-auto hidden lg:block">
-        <Tabs
-          defaultValue="account"
-          className="flex justify-center items-center "
-        >
+      <div id="services" className="pt-20 w-[80%] mx-auto hidden lg:block">
+        <Tabs defaultValue="hrms" className="flex justify-center items-center ">
           <TabsList className="h-full flex flex-col space-y-8 ">
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9 }}
+              viewport={{ once: true }}
+            >
+              <TabsTrigger className="serviceCard space-x-8" value="hrms">
+                <Image
+                  className="w-[20%]"
+                  src="/images/SoftwareLogo.png"
+                  width={50}
+                  height={50}
+                  alt="acclogo"
+                />
+                <p className="w-[80%] font-bold text-[14px]">
+                  Software Redefined
+                </p>
+              </TabsTrigger>
+            </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -38,42 +54,6 @@ const Services = (props: Props) => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9}}
-              viewport={{ once: true }}
-            >
-              <TabsTrigger className="serviceCard space-x-8" value="hrms">
-                <Image
-                  className="w-[20%]"
-                  src="/images/SoftwareLogo.png"
-                  width={50}
-                  height={50}
-                  alt="acclogo"
-                />
-                <p className="w-[80%] font-bold text-[14px]">
-                  Software Redefined
-                </p>
-              </TabsTrigger>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9}}
-              viewport={{ once: true }}
-            >
-              <TabsTrigger className="serviceCard space-x-8" value="hr">
-                <Image
-                  className="w-[20%]"
-                  src="/images/HrLogo.png"
-                  width={50}
-                  height={50}
-                  alt="acclogo"
-                />
-                <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
-              </TabsTrigger>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}
               viewport={{ once: true }}
             >
@@ -88,6 +68,23 @@ const Services = (props: Props) => {
                 <p className="w-[80%] font-bold text-[14px]">Webdevelopment</p>
               </TabsTrigger>
             </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9 }}
+              viewport={{ once: true }}
+            >
+              <TabsTrigger className="serviceCard space-x-8" value="hr">
+                <Image
+                  className="w-[20%]"
+                  src="/images/HrLogo.png"
+                  width={50}
+                  height={50}
+                  alt="acclogo"
+                />
+                <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
+              </TabsTrigger>
+            </motion.div>
           </TabsList>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -96,32 +93,6 @@ const Services = (props: Props) => {
             viewport={{ once: true }}
             className="px-8 hidden lg:block"
           >
-            <TabsContent value="account">
-              <Image
-                className="w-[250px] xl:w-[300px] mx-auto"
-                src="/images/tax.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-              <p className="text-center">
-                Say goodbye to the complexities of financial management.
-                Simplifyr offers intuitive accounting solutions designed to
-                streamline your financial processes. From bookkeeping to
-                financial reporting, our tools are crafted to simplify every
-                aspect of your accounting needs. Experience transparency and
-                control like never before.
-                <span className="font-semibold">
-                  &#34;Simplify Your Finances with Simplifyr&#39;s Accounting
-                  Expertise &#34;
-                </span>
-                <Link href="/accounts">
-                  <span className="px-2 underline font-semibold">
-                    Know more
-                  </span>
-                </Link>
-              </p>
-            </TabsContent>
             <TabsContent value="hrms">
               <Image
                 className="w-[250px] xl:w-[300px] mx-auto"
@@ -142,6 +113,32 @@ const Services = (props: Props) => {
                   Software&#34;.
                 </span>
                 <Link href="/softwareredefined">
+                  <span className="px-2 underline font-semibold">
+                    Know more
+                  </span>
+                </Link>
+              </p>
+            </TabsContent>
+            <TabsContent value="account">
+              <Image
+                className="w-[250px] xl:w-[300px] mx-auto"
+                src="/images/tax.svg"
+                width={350}
+                height={350}
+                alt="acclogo"
+              />
+              <p className="text-center">
+                Say goodbye to the complexities of financial management.
+                Simplifyr offers intuitive accounting solutions designed to
+                streamline your financial processes. From bookkeeping to
+                financial reporting, our tools are crafted to simplify every
+                aspect of your accounting needs. Experience transparency and
+                control like never before.
+                <span className="font-semibold">
+                  &#34;Simplify Your Finances with Simplifyr&#39;s Accounting
+                  Expertise &#34;
+                </span>
+                <Link href="/accounts">
                   <span className="px-2 underline font-semibold">
                     Know more
                   </span>

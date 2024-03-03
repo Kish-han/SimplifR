@@ -6,7 +6,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <>
-      <div className="px-6 pt-20 overflow-x-hidden">
+      <div className="px-6 pt-10 overflow-x-hidden">
         <h3 className="text-center heading mt-8">Accounts</h3>
         <div className="flex justify-center items-center mt-10">
           <Image
@@ -26,6 +26,27 @@ const page = (props: Props) => {
           financial operations.
         </p>
         <div className="space-y-10  px-4 py-8 lg:w-[80%] mx-auto mt-8">
+          <div className="flex  items-center">
+            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
+              <Image
+                src="/images/services/accounts.svg"
+                width={350}
+                height={350}
+                alt="acclogo"
+              />
+            </div>
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
+                Finalization of Statutory Accounts
+              </h3>
+              <p>
+                Let our tech-driven approach streamline the finalization of
+                year-end accounts, including reconciliation of balances,
+                rectification of errors, and coordination with auditors for
+                various audits.
+              </p>
+            </div>
+          </div>
           <div className="flex  items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
@@ -47,28 +68,15 @@ const page = (props: Props) => {
             </div>
           </div>
 
-          <div className="flex  items-center">
+          <div className="flex items-center">
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/clipboard.svg"
+                src="/images/services/process.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
               />
             </div>
-            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
-                Tax Compliance
-              </h3>
-              <p>
-                Stay up to date with ever-changing tax laws and ensure timely
-                filing of income tax, GST, and professional tax returns with our
-                expert consultancy services
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Payroll Processing
@@ -79,9 +87,22 @@ const page = (props: Props) => {
                 and more.
               </p>
             </div>
+          </div>
+          
+          <div className="flex  items-center">
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
+                Tax Compliance
+              </h3>
+              <p>
+                Stay up to date with ever-changing tax laws and ensure timely
+                filing of income tax, GST, and professional tax returns with our
+                expert consultancy services
+              </p>
+            </div>
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/process.svg"
+                src="/images/services/clipboard.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
@@ -107,28 +128,6 @@ const page = (props: Props) => {
                 ease, from preparation and filing of ROC annual returns to
                 maintenance of various registers under labour laws.
               </p>
-            </div>
-          </div>
-
-          <div className="flex  items-center">
-            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
-                Finalization of Statutory Accounts
-              </h3>
-              <p>
-                Let our tech-driven approach streamline the finalization of
-                year-end accounts, including reconciliation of balances,
-                rectification of errors, and coordination with auditors for
-                various audits.
-              </p>
-            </div>
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <Image
-                src="/images/services/accounts.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
             </div>
           </div>
         </div>

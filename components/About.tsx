@@ -6,7 +6,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div id="about" className="py-4 pb-16">
+    <div id="about" className="py-4">
       <Headings head={"About Us"} />
       <div className="flex justify-center items-center">
         <div className="w-[80%] xl:w-[60%] space-y-8 mt-[35px] lg:mt-[50px]">
@@ -17,14 +17,11 @@ const About = (props: Props) => {
             viewport={{ once: true }}
             className="text-[14px] md:text-[16px]"
           >
-            In the realm of accounting, we take the intricacies out of your
-            financial management, offering intuitive solutions that bring
-            clarity to your numbers. Our HRMS software is designed to simplify
-            the complexities of human resouhrce management, ensuring efficiency
-            in every aspect of your workforce administration. Additionally, our
-            web development services are crafted to meet your unique needs,
-            delivering solutions that are not only cutting-edge but also
-            user-friendly.
+            In the realm of business solutions, we specialize in providing
+            comprehensive services to streamline your operations. From
+            end-to-end accounting to customized software development, web
+            development, and HR solutions, we offer intuitive and tailored
+            solutions to meet your unique needs.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 150 }}
@@ -33,13 +30,11 @@ const About = (props: Props) => {
             viewport={{ once: true }}
             className="text-[14px] md:text-[16px]"
           >
-            Our commitment goes beyond just simplifying tasks; we aim to empower
-            your business with straightforward solutions that cut through the
-            clutter, allowing you to concentrate on your core objectives. At
-            Simplifyr, we understand that your success lies in the ability to
-            focus on what truly matters. That`&#39;`s why our suite of services
-            is geared towards enhancing efficiency, reducing complexities, and
-            ultimately, boosting your overall productivity.
+            Our suite of services is designed to simplify complexities and
+            enhance efficiency across all aspects of your business. Whether you
+            need assistance with accounting, software development, web design,
+            or human resource administration, we are here to empower your
+            business with straightforward solutions.
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 100 }}
@@ -48,10 +43,13 @@ const About = (props: Props) => {
             viewport={{ once: true }}
             className="text-[14px] md:text-[16px]"
           >
-            Join us on a journey where complexity meets simplicity, and let
-            Simplifyr be your trusted partner in achieving operational
-            excellence. Your success is our priority, and we are here to
-            simplify the path to it.
+            At Simplifyr, we understand the importance of focusing on your core
+            objectives. That&#39;s why our commitment goes beyond just simplifying
+            tasks; we aim to boost your overall productivity and help you
+            achieve operational excellence. Join us on a journey where
+            complexity meets simplicity, and let Simplifyr be your trusted
+            partner in unlocking your business&#39;s full potential. Your success is
+            our priority, and we are dedicated to simplifying the path.
           </motion.p>
         </div>
       </div>
