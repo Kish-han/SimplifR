@@ -10,9 +10,9 @@ type Props = {};
 const Hero = (props: Props) => {
   const [text] = useTypewriter({
     words: [
-      "Software Redefined",
+      "Software",
       "Accounting",
-      "WebDevelopment",
+      "Web Development",
       "HR Solutions",
     ],
     loop: 0,
@@ -57,8 +57,15 @@ const Hero = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px] "
+              className="object-contain w-[180px] dark:hidden"
               src="/images/logo.webp"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              className="object-contain w-[180px] hidden dark:block"
+              src="/images/logoroyaloak.png"
               width={120}
               height={100}
               alt="logo"

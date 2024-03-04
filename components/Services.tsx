@@ -65,7 +65,7 @@ const Services = (props: Props) => {
                   height={50}
                   alt="acclogo"
                 />
-                <p className="w-[80%] font-bold text-[14px]">Webdevelopment</p>
+                <p className="w-[80%] font-bold text-[14px]">Web Development</p>
               </TabsTrigger>
             </motion.div>
             <motion.div
@@ -199,37 +199,13 @@ const Services = (props: Props) => {
           </motion.div>
         </Tabs>
       </div>
-      <div className="mt-10 w-[80%] mx-auto lg:hidden">
-        <Tabs
-          defaultValue="account"
-          className="flex justify-center items-center "
-        >
+      <div className="w-[80%] pt-16 mx-auto lg:hidden">
+        <Tabs defaultValue="hrms" className="flex justify-center items-center ">
           <TabsList className="h-full flex flex-col space-y-8 ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9 }}
-              viewport={{ once: true }}
-            >
-              <Link href="/accounts">
-                <TabsTrigger className="serviceCard space-x-8" value="account">
-                  <Image
-                    className="w-[20%]"
-                    src="/images/AccLogo.png"
-                    width={50}
-                    height={50}
-                    alt="acclogo"
-                  />
-                  <p className="w-[80%] font-bold text-[14px]">
-                    Accounting Made Simple
-                  </p>
-                </TabsTrigger>
-              </Link>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: -100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.2 }}
               viewport={{ once: true }}
             >
               <Link href="/softwareredefined">
@@ -250,26 +226,28 @@ const Services = (props: Props) => {
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.4 }}
+              transition={{ duration: 0.9, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <Link href="/hrsolutions">
-                <TabsTrigger className="serviceCard space-x-8" value="hr">
+              <Link href="/accounts">
+                <TabsTrigger className="serviceCard space-x-8" value="account">
                   <Image
                     className="w-[20%]"
-                    src="/images/HrLogo.png"
+                    src="/images/AccLogo.png"
                     width={50}
                     height={50}
                     alt="acclogo"
                   />
-                  <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
+                  <p className="w-[80%] font-bold text-[14px]">
+                    Accounting Made Simple
+                  </p>
                 </TabsTrigger>
               </Link>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.9, delay: 0.6 }}
+              transition={{ duration: 0.9, delay: 0.4 }}
               viewport={{ once: true }}
             >
               <Link href="/webdevelopment">
@@ -282,8 +260,27 @@ const Services = (props: Props) => {
                     alt="acclogo"
                   />
                   <p className="w-[80%] font-bold text-[14px]">
-                    Webdevelopment
+                    Web Development
                   </p>
+                </TabsTrigger>
+              </Link>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.9, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <Link href="/hrsolutions">
+                <TabsTrigger className="serviceCard space-x-8" value="hr">
+                  <Image
+                    className="w-[20%]"
+                    src="/images/HrLogo.png"
+                    width={50}
+                    height={50}
+                    alt="acclogo"
+                  />
+                  <p className="w-[80%] font-bold text-[14px]">HR Soultions</p>
                 </TabsTrigger>
               </Link>
             </motion.div>

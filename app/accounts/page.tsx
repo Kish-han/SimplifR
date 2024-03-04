@@ -29,12 +29,25 @@ const page = (props: Props) => {
           <div className="flex  items-center">
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/accounts.svg"
+                src="/images/services/calculator.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
               />
             </div>
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
+                Accounting/Bookkeeping
+              </h3>
+              <p>
+                Seamlessly manage daily, monthly, or quarterly bookkeeping
+                needs, whether on-site or off-site, and with support for both
+                cloud and desktop-based accounting software.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex  items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Finalization of Statutory Accounts
@@ -46,21 +59,9 @@ const page = (props: Props) => {
                 various audits.
               </p>
             </div>
-          </div>
-          <div className="flex  items-center">
-            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
-                Accounting/Bookkeeping
-              </h3>
-              <p>
-                Seamlessly manage daily, monthly, or quarterly bookkeeping
-                needs, whether on-site or off-site, and with support for both
-                cloud and desktop-based accounting software.
-              </p>
-            </div>
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/calculator.svg"
+                src="/images/services/accounts.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
@@ -88,7 +89,7 @@ const page = (props: Props) => {
               </p>
             </div>
           </div>
-          
+
           <div className="flex  items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">

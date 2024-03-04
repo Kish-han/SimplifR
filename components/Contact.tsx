@@ -134,22 +134,29 @@ const Contact = (props: Props) => {
                 className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
               />
             </label>
-            <div className="flex justify-end">
-              {written ? (
-                <button
-                  type="submit"
-                  className="bgBlur text-white py-3 px-8 rounded-xl outline-none font-bold shadow-md"
-                >
-                  {loading ? "Sending..." : "Send"}
-                </button>
-              ) : (
-                <div
-                  className="cursor-not-allowed py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-sm shadow-primary "
-                  onClick={() => alert("Please fill all the fields")}
-                >
-                  Send
-                </div>
-              )}
+            <div className="flex justify-between">
+              <div className="">
+                <p>Ph no : 9590319320</p>
+                <p>Email : </p>
+              </div>
+
+              <div className="">
+                {written ? (
+                  <button
+                    type="submit"
+                    className="bgBlur text-white py-3 px-8 rounded-xl outline-none font-bold shadow-md"
+                  >
+                    {loading ? "Sending..." : "Send"}
+                  </button>
+                ) : (
+                  <div
+                    className="cursor-not-allowed py-3 px-8 rounded-xl outline-none w-fit font-bold shadow-sm shadow-primary "
+                    onClick={() => alert("Please fill all the fields")}
+                  >
+                    Send
+                  </div>
+                )}
+              </div>
             </div>
           </form>
         </div>
