@@ -39,19 +39,21 @@ const NavBar = (props: Props) => {
           show ? "navcarddark rounded-none" : "bg-transparent"
         }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
       >
-        <div className="text-[20px] text-center font-bold">Simply<span className="text-highlight text-[24px]">R</span>  </div>
+        <div className="text-[20px] text-center font-bold">
+          Simply<span className="text-highlight text-[24px]">R</span>{" "}
+        </div>
         <div className="w-[40%]">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:relative ${
               navOpen ? "right-0 lg:right-0" : "right-[-200px] lg:right-0"
-            } top-0 h-[300px]  lg:h-full justify-around items-center font-[500] text-[14px] lg:px-5 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out`}
+            } top-0 h-[300px]  lg:h-full justify-around items-center font-[500] text-[14px] lg:px-5 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out py-4`}
           >
             <AiOutlineClose
               className="absolute top-2 right-2 h-10 text-[20px] lg:hidden"
               onClick={() => {
                 setNavOpen(false);
               }}
-            /> 
+            />
             <li
               className={`navLinks mt-8 lg:mt-0 ${
                 active === "Home" && " bg-highlight text-white"
@@ -61,7 +63,9 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="font-bold text-[14px]" href="/">Home</Link>
+              <Link className="font-bold text-[14px]" href="/">
+                Home
+              </Link>
             </li>
             <li
               className={`navLinks ${
@@ -72,7 +76,9 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="font-bold text-[14px]" href="/#services">Services</Link>
+              <Link className="font-bold text-[14px]" href="/#services">
+                Services
+              </Link>
             </li>
             <li
               className={`navLinks ${
@@ -83,7 +89,9 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="font-bold text-[14px]" href="/#about">About</Link>
+              <Link className="font-bold text-[14px]" href="/#about">
+                About
+              </Link>
             </li>
             {/* <li
               className={`navLinks ${
@@ -105,7 +113,9 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="font-bold text-[14px]" href="#contact">Contact Us</Link>
+              <Link className="font-bold text-[14px]" href="#contact">
+                Contact Us
+              </Link>
             </li>
           </ul>
         </div>

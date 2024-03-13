@@ -6,8 +6,8 @@ const page = () => {
   return (
     <>
       <div className="px-6 pt-10 overflow-x-hidden">
-        <h3 className="text-center heading mt-8">HR Solutions</h3>
-        <div className="flex justify-center items-center mt-8">
+        <h3 className="text-center heading mt-8">Software</h3>
+        <div className="flex justify-center items-center mt-8 ">
           <Image
             className=" "
             src="/images/hr.svg"
@@ -62,7 +62,7 @@ const page = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] text-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Quality Resources
               </h3>
               <p>

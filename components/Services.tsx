@@ -112,12 +112,10 @@ const Services = (props: Props) => {
                   &#34;Streamline Your Workforce with Simplifyr&#39;s HRMS
                   Software&#34;.
                 </span>
-                <Link href="/softwareredefined">
-                  <span className="px-2 underline font-semibold">
-                    Know more
-                  </span>
-                </Link>
               </p>
+              <Link href="/softwareredefined" className="float-end mt-6">
+                <span className="px-2 underline font-semibold">Know more</span>
+              </Link>
             </TabsContent>
             <TabsContent value="account">
               <Image
@@ -138,12 +136,10 @@ const Services = (props: Props) => {
                   &#34;Simplify Your Finances with Simplifyr&#39;s Accounting
                   Expertise &#34;
                 </span>
-                <Link href="/accounts">
-                  <span className="px-2 underline font-semibold">
-                    Know more
-                  </span>
-                </Link>
               </p>
+              <Link href="/accounts" className="float-end mt-6">
+                <span className="px-2 underline font-semibold">Know more</span>
+              </Link>
             </TabsContent>
             <TabsContent value="hr">
               <Image
@@ -162,12 +158,10 @@ const Services = (props: Props) => {
                 <span className="font-semibold">
                   “Simplify your HR experience with Simplifyr”.
                 </span>
-                <Link href="/hrsolutions">
-                  <span className="px-2 underline font-semibold">
-                    Know more
-                  </span>
-                </Link>
               </p>
+              <Link href="/hrsolutions" className="float-end mt-6">
+                <span className="px-2 underline font-semibold">Know more</span>
+              </Link>
             </TabsContent>
             <TabsContent value="web">
               <Image
@@ -189,12 +183,10 @@ const Services = (props: Props) => {
                   &#34;Elevate Online Success: Simplifyr&#39;s Web Development
                   Solutions&#34;.
                 </span>
-                <Link href="/webdevelopment">
-                  <span className="px-2 underline font-semibold">
-                    Know more
-                  </span>
-                </Link>
               </p>
+              <Link href="/webdevelopment" className="float-end mt-6">
+                <span className="px-2 underline font-semibold">Know more</span>
+              </Link>
             </TabsContent>
           </motion.div>
         </Tabs>

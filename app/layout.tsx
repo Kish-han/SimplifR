@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import NavBar from "../components/NavBar";
 import { ThemeProvider } from "@/components/theme-provider";
+
 const poppins = Poppins({
+  weight: ["400", "500", "600", "800"],
+  subsets: ["latin"],
+});
+
+const montserrat = Montserrat({
   weight: ["400", "500", "600", "800"],
   subsets: ["latin"],
 });
@@ -20,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={montserrat.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

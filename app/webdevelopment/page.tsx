@@ -7,7 +7,7 @@ const page = () => {
     <>
       <div className="px-6 pt-10 overflow-x-hidden">
         <h3 className="text-center heading mt-8">Web Development</h3>
-        <div className="flex justify-center items-center mt-8">
+        <div className="flex justify-center items-center mt-8 ">
           <Image
             className=" "
             src="/images/web.svg"
@@ -61,7 +61,7 @@ const page = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] text-center ">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Custom Website Development
               </h3>
               <p>
@@ -78,7 +78,7 @@ const page = () => {
 
           <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] text-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Responsive Design
               </h3>
               <p>
@@ -109,7 +109,7 @@ const page = () => {
               />
             </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] text-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Ongoing Maintenance and Support
               </h3>
               <p>

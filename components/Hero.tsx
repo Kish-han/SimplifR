@@ -9,12 +9,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   const [text] = useTypewriter({
-    words: [
-      "Software",
-      "Accounting",
-      "Web Development",
-      "HR Solutions",
-    ],
+    words: ["Software", "Accounting", "Web Development", "HR Solutions"],
     loop: 0,
   });
 
@@ -47,38 +42,38 @@ const Hero = (props: Props) => {
           </Link>
         </button>
         <div className="w-full py-8 ">
-          <p className="text-[24px] font-bold">Our Clients</p>
+          <p className="text-[24px] font-bold">Trusted by</p>
           <div className="grid grid-flow-col justify-around items-center md:px-10 space-x-3 ">
             <Image
-              className="object-contain w-[180px]"
+              className="object-contain w-[200px]"
               src="/images/logo1.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px] dark:hidden"
+              className="object-contain w-[200px] dark:hidden"
               src="/images/logo.webp"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px] hidden dark:block"
+              className="object-contain w-[200px] hidden dark:block"
               src="/images/logoroyaloak.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[150px]"
+              className="object-contain w-[180px]"
               src="/images/logo2.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[150px]"
+              className="object-contain w-[180px]"
               src="/images/logo3.png"
               width={120}
               height={100}

@@ -8,7 +8,7 @@ const page = (props: Props) => {
     <>
       <div className="px-6 pt-10 overflow-x-hidden">
         <h3 className="text-center heading mt-8">Accounts</h3>
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-8 ">
           <Image
             className=" "
             src="/images/tax.svg"
@@ -25,16 +25,8 @@ const page = (props: Props) => {
           Simplifyr is here with tech-savvy solutions to revolutionize your
           financial operations.
         </p>
-        <div className="space-y-10  px-4 py-8 lg:w-[80%] mx-auto mt-8">
-          <div className="flex  items-center">
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <Image
-                src="/images/services/calculator.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-            </div>
+        <div className="space-y-10 px-4 py-6 lg:w-[80%] mx-auto mt-8">
+          <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Accounting/Bookkeeping
@@ -45,9 +37,25 @@ const page = (props: Props) => {
                 cloud and desktop-based accounting software.
               </p>
             </div>
+            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
+              <Image
+                src="/images/services/calculator.svg"
+                width={350}
+                height={350}
+                alt="acclogo"
+              />
+            </div>
           </div>
 
-          <div className="flex  items-center">
+          <div className="flex items-center">
+            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
+              <Image
+                src="/images/services/accounts.svg"
+                width={350}
+                height={350}
+                alt="acclogo"
+              />
+            </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Finalization of Statutory Accounts
@@ -59,25 +67,9 @@ const page = (props: Props) => {
                 various audits.
               </p>
             </div>
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <Image
-                src="/images/services/accounts.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-            </div>
           </div>
 
           <div className="flex items-center">
-            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
-              <Image
-                src="/images/services/process.svg"
-                width={350}
-                height={350}
-                alt="acclogo"
-              />
-            </div>
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Payroll Processing
@@ -88,22 +80,9 @@ const page = (props: Props) => {
                 and more.
               </p>
             </div>
-          </div>
-
-          <div className="flex  items-center">
-            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
-              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
-                Tax Compliance
-              </h3>
-              <p>
-                Stay up to date with ever-changing tax laws and ensure timely
-                filing of income tax, GST, and professional tax returns with our
-                expert consultancy services
-              </p>
-            </div>
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/clipboard.svg"
+                src="/images/services/process.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
@@ -114,12 +93,25 @@ const page = (props: Props) => {
           <div className="flex items-center">
             <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
               <Image
-                src="/images/services/law.svg"
+                src="/images/services/clipboard.svg"
                 width={350}
                 height={350}
                 alt="acclogo"
               />
             </div>
+            <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
+              <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
+                Tax Compliance
+              </h3>
+              <p>
+                Stay up to date with ever-changing tax laws and ensure timely
+                filing of income tax, GST, and professional tax returns with our
+                expert consultancy services
+              </p>
+            </div>
+          </div>
+
+          <div className="flex items-center">
             <div className="w-full lg:w-1/2 flex flex-col items-center justify-center">
               <h3 className="text-highlight font-bold text-[24px] mb-3 text-center">
                 Company Law & Labour Law Compliance
@@ -129,6 +121,14 @@ const page = (props: Props) => {
                 ease, from preparation and filing of ROC annual returns to
                 maintenance of various registers under labour laws.
               </p>
+            </div>
+            <div className="w-1/2 hidden lg:flex flex-col items-center justify-center">
+              <Image
+                src="/images/services/law.svg"
+                width={350}
+                height={350}
+                alt="acclogo"
+              />
             </div>
           </div>
         </div>

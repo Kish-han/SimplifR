@@ -102,7 +102,7 @@ const Contact = (props: Props) => {
               />
             </label>
             <label className="flex flex-col mb-5">
-              <span className="mb-3">Your email</span>
+              <span className="mb-3">Your Email</span>
               <input
                 type="email"
                 name="email"
@@ -113,13 +113,13 @@ const Contact = (props: Props) => {
               />
             </label>
             <label className="flex flex-col mb-5">
-              <span className="mb-3">Your Phone number</span>
+              <span className="mb-3">Your Phone Number</span>
               <input
                 type="tel"
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                placeholder="What's your ph number ?"
+                placeholder="What's your Ph Number ?"
                 className="bg-[#fafaff] dark:bg-[#25232C] py-2 rounded-md px-2 focus:outline-none focus:ring-2 focus:ring-highlight focus:ring-opacity-50"
               />
             </label>
@@ -136,8 +136,8 @@ const Contact = (props: Props) => {
             </label>
             <div className="flex justify-between">
               <div className="">
-                <p>Ph no : 9590319320</p>
-                <p>Email : </p>
+                <p>PH NO : +91 9590319320</p>
+                <p>E-MAIL : </p>
               </div>
 
               <div className="">
