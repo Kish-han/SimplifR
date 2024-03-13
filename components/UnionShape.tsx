@@ -31,7 +31,7 @@ const UnionShape = (props: Props) => {
           {/* <h2 className="text-[30px] z-[1000]">Our clients</h2> */}
           <div className=" font-bold md:text-[20px] w-[80%] md:w-[50%] mx-auto text-center">
             <p>
-              At Simplify we pride ourselves on delivering exceptional solutions
+              At Simplifyr we pride ourselves on delivering exceptional solutions
               that drive real results for our clients.
             </p>
             <div className="flex flex-col md:flex-row items-center w-[100%] mx-auto text-center md:text-left space-y-4 md:space-x-4">
@@ -49,7 +49,7 @@ const UnionShape = (props: Props) => {
               <div className="text-[14px]">
                 <p>
                   Our team of talented people work hand-in-hand with clients to
-                  create impactful results that resonate with their needs. we
+                  create impactful results that resonate with their needs. We
                   strive to exceed expectations and deliver a fabulous result.
                 </p>
               </div>

@@ -135,7 +135,7 @@ const Contact = (props: Props) => {
               />
             </label>
             <div className="flex justify-between">
-              <div className="">
+              <div className="font-bold">
                 <p>PH NO : +91 9590319320</p>
                 <p>E-MAIL : </p>
               </div>
