@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { ModeToggle } from "./ModeToggle";
+import { SocialIcon } from "react-social-icons";
+
 type Props = {};
 
 const NavBar = (props: Props) => {
@@ -93,17 +95,6 @@ const NavBar = (props: Props) => {
                 About
               </Link>
             </li>
-            {/* <li
-              className={`navLinks ${
-                active === "Vision" && "bg-highlight text-white"
-              }`}
-              onClick={() => {
-                setActive("Vision");
-                setNavOpen(false);
-              }}
-            >
-              <Link href="#ourvision">Our Vision</Link>
-            </li> */}
             <li
               className={`navLinks ${
                 active === "Contact" && "bg-highlight text-white"
@@ -117,10 +108,50 @@ const NavBar = (props: Props) => {
                 Contact Us
               </Link>
             </li>
+            <li>
+              <div className="socials lg:hidden">
+                <div className="space-x-3">
+                  <SocialIcon
+                    url="https://twitter.com/KishanPras62098"
+                    bgColor="#585858"
+                    style={{ width: 30, height: 30 }}
+                  />
+                  <SocialIcon
+                    url="https://twitter.com/KishanPras62098"
+                    bgColor="#585858"
+                    style={{ width: 30, height: 30 }}
+                  />
+                  <SocialIcon
+                    url="https://twitter.com/KishanPras62098"
+                    bgColor="#585858"
+                    style={{ width: 30, height: 30 }}
+                  />
+                </div>
+              </div>
+            </li>
           </ul>
         </div>
         <div className="z-[10]">
           <div className="space-x-5 flex items-center">
+            <div className="socials hidden lg:flex">
+              <div className="space-x-2 fixed right-[95px] top-7">
+                <SocialIcon
+                  url="https://twitter.com/KishanPras62098"
+                  bgColor="#585858"
+                  style={{ width: 30, height: 30 }}
+                />
+                <SocialIcon
+                  url="https://twitter.com/KishanPras62098"
+                  bgColor="#585858"
+                  style={{ width: 30, height: 30 }}
+                />
+                <SocialIcon
+                  url="https://twitter.com/KishanPras62098"
+                  bgColor="#585858"
+                  style={{ width: 30, height: 30 }}
+                />
+              </div>
+            </div>
             <ModeToggle />
             <RxHamburgerMenu
               className="text-[30px] lg:hidden"

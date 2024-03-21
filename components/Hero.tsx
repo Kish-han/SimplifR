@@ -45,8 +45,15 @@ const Hero = (props: Props) => {
           <p className="text-[24px] font-bold">Trusted by</p>
           <div className="grid grid-flow-col justify-around items-center md:px-10 space-x-3 ">
             <Image
-              className="object-contain w-[200px]"
+              className="object-contain w-[200px] dark:hidden"
               src="/images/logo1.png"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              className="object-contain w-[200px] hidden dark:block"
+              src="/images/logo1dark.png"
               width={120}
               height={100}
               alt="logo"
@@ -73,8 +80,15 @@ const Hero = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px]"
+              className="object-contain w-[180px] dark:hidden"
               src="/images/logo3.png"
+              width={120}
+              height={100}
+              alt="logo"
+            />
+            <Image
+              className="object-contain w-[280px] hidden dark:block"
+              src="/images/logo3dark.png"
               width={120}
               height={100}
               alt="logo"
