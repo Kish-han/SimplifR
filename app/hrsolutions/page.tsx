@@ -6,7 +6,7 @@ const page = () => {
   return (
     <>
       <div className="px-6 pt-10 overflow-x-hidden">
-        <h3 className="text-center heading mt-8">Software</h3>
+        <h3 className="text-center heading mt-8">HR solutions</h3>
         <div className="flex justify-center items-center mt-8 ">
           <Image
             className=" "
