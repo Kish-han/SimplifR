@@ -113,7 +113,7 @@ const Services = (props: Props) => {
                   Software&#34;.
                 </span>
               </p>
-              <Link href="/softwareredefined" className="float-end mt-1">
+              <Link href="/softwareredefined" className="float-end mt-0">
                 <span className="px-2 underline font-semibold">Know more</span>
               </Link>
             </TabsContent>
@@ -137,7 +137,7 @@ const Services = (props: Props) => {
                   Expertise &#34;
                 </span>
               </p>
-              <Link href="/accounts" className="float-end mt-1">
+              <Link href="/accounts" className="float-end mt-0">
                 <span className="px-2 underline font-semibold">Know more</span>
               </Link>
             </TabsContent>
@@ -159,7 +159,7 @@ const Services = (props: Props) => {
                   “Simplify your HR experience with Simplifyr”.
                 </span>
               </p>
-              <Link href="/hrsolutions" className="float-end mt-1">
+              <Link href="/hrsolutions" className="float-end mt-2">
                 <span className="px-2 underline font-semibold">Know more</span>
               </Link>
             </TabsContent>
@@ -184,7 +184,7 @@ const Services = (props: Props) => {
                   Solutions&#34;.
                 </span>
               </p>
-              <Link href="/webdevelopment" className="float-end mt-2">
+              <Link href="/webdevelopment" className="float-end mt-0">
                 <span className="px-2 underline font-semibold">Know more</span>
               </Link>
             </TabsContent>
