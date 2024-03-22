@@ -52,7 +52,7 @@ const Hero = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain w-[200px] hidden dark:block"
+              className="object-contain w-[60px] md:w-[100px] lg:w-[150px] hidden dark:block"
               src="/images/logo1dark.png"
               width={120}
               height={100}

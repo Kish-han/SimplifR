@@ -102,14 +102,13 @@ const Services = (props: Props) => {
                 alt="acclogo"
               />
               <p className="text-center">
-                Managing human resources has never been this easy.
-                Simplifyr&#39;s HRMS software is your comprehensive solution for
-                workforce management. We simplify the complexities of HR tasks,
-                from employee onboarding to payroll processing. Enjoy a seamless
-                experience that enables you to focus on fostering a thriving
-                workplace culture.
+                Optimize your operations with our cutting-edge software
+                solutions. Whether you&#39;re managing human resources or any
+                other aspect of your business, our software streamlines tasks,
+                simplifies complexities, and enhances efficiency. Transform your
+                workforce management with our software solutions.
                 <span className="font-semibold">
-                  &#34;Streamline Your Workforce with Simplifyr&#39;s HRMS
+                  &#34;Streamline Your Workforce with Simplifyr&#39;s
                   Software&#34;.
                 </span>
               </p>
@@ -180,8 +179,8 @@ const Services = (props: Props) => {
                 hassle-free user experience.{" "}
                 <span className="font-semibold">
                   {" "}
-                  &#34;Elevate Your Online Success with Simplifyr&#39;s Web Development
-                  Solutions&#34;.
+                  &#34;Elevate Your Online Success with Simplifyr&#39;s Web
+                  Development Solutions&#34;.
                 </span>
               </p>
               <Link href="/webdevelopment" className="float-end mt-0">

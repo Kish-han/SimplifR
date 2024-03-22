@@ -7,6 +7,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { ModeToggle } from "./ModeToggle";
 import { SocialIcon } from "react-social-icons";
+import Image from "next/image";
 
 type Props = {};
 
@@ -39,16 +40,29 @@ const NavBar = (props: Props) => {
         viewport={{ once: true }}
         className={`fixed ${
           show ? "navcarddark rounded-none" : "bg-transparent"
-        }  top-0 z-10 h-[10vh] w-full flex justify-between items-center px-8`}
+        }  top-0 z-10 h-[10vh] w-full flex justify-between items-center pr-8 `}
       >
-        <div className="text-[20px] text-center font-bold">
-          Simply<span className="text-highlight text-[24px]">R</span>{" "}
+        <div className="text-[20px] text-center font-bold ">
+          <Image
+            className="object-contain hidden dark:block"
+            src={"/images/mainlogo.png"}
+            width={300}
+            height={300}
+            alt="logo"
+          />
+          <Image
+            className="object-contain dark:hidden"
+            src={"/images/mainlogodark.png"}
+            width={300}
+            height={300}
+            alt="logo"
+          />
         </div>
-        <div className="w-[40%]">
+        <div className="w-[45%]">
           <ul
-            className={`flex flex-col lg:flex-row absolute lg:relative ${
-              navOpen ? "right-0 lg:right-0" : "right-[-200px] lg:right-0"
-            } top-0 h-[300px]  lg:h-full justify-around items-center font-[500] text-[14px] lg:px-5 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out py-4`}
+            className={`flex flex-col lg:flex-row absolute lg:relative  ${
+              navOpen ? "right-0 lg:right-0" : "right-[-200px] lg:right-0 "
+            } top-0  h-[300px] lg:h-full items-center font-[500] text-[14px] lg:px-5 xl:pl-16 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C] transition-all duration-300 ease-in-out justify-around `}
           >
             <AiOutlineClose
               className="absolute top-2 right-2 h-10 text-[20px] lg:hidden"
@@ -134,7 +148,7 @@ const NavBar = (props: Props) => {
         <div className="z-[10]">
           <div className="space-x-5 flex items-center">
             <div className="socials hidden lg:flex">
-              <div className="space-x-2 fixed right-[95px] top-7">
+              <div className="space-x-2 ">
                 <SocialIcon
                   url="https://twitter.com/KishanPras62098"
                   bgColor="#585858"
