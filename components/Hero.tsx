@@ -80,19 +80,19 @@ const Hero = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px] dark:hidden"
-              src="/images/logo3.png"
+              className="object-contain w-[150px] "
+              src="/images/logo3.svg"
               width={120}
               height={100}
               alt="logo"
             />
-            <Image
+            {/* <Image
               className="object-contain w-[280px] hidden dark:block"
               src="/images/logo3dark.png"
               width={120}
               height={100}
               alt="logo"
-            />
+            /> */}
           </div>
         </div>
       </div>
