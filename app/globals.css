@@ -97,7 +97,7 @@
     @apply bg-[#fafaff] dark:bg-[#25232C] text-foreground;
   }
   .navLinks {
-    @apply w-full lg:w-fit px-10 lg:px-3 text-center py-1 lg:rounded-xl hover:scale-95 transition-all duration-300;
+    @apply w-full lg:w-fit px-10 lg:px-3 text-left py-1 lg:rounded-xl hover:scale-95 transition-all duration-300;
   }
   .navcard {
     @apply bg-white backdrop-blur-[80px] rounded-[12px] border-0 border-solid border-[rgba(255,255,255,0.75)];
@@ -108,6 +108,16 @@
       384.58% 148.53% at 1.07% 13.33%,
       rgba(176, 175, 175, 0.21) 0%,
       rgba(106, 106, 106, 0.06) 100%
+    );
+  }
+  .mobilenavbar {
+    background-image: linear-gradient(
+      to right,
+      #323232,
+      #272727,
+      #1c1c1c,
+      #111111,
+      #000000
     );
   }
   .bgBlur {

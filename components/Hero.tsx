@@ -20,7 +20,7 @@ const Hero = (props: Props) => {
       transition={{ duration: 0.8, delay: 1 }}
       className="relative scrollbar py-16 pt-24"
     >
-      <div className="px-14 text-center space-y-[25px] pt-[70px]">
+      <div className="px-10 lg:px-14 text-center space-y-[25px] pt-[70px]">
         <h1 className="heading">
           Welcome to <span className="">SimplifyR</span>,
           <br />
@@ -43,7 +43,7 @@ const Hero = (props: Props) => {
         </button>
         <div className="w-full py-8 ">
           <p className="text-[24px] font-bold">Trusted by</p>
-          <div className="grid grid-flow-col justify-around items-center md:px-10 space-x-3 ">
+          <div className="grid grid-flow-col justify-around items-center px-0 md:px-10 space-x-4 ">
             <Image
               className="object-contain w-[200px] dark:hidden"
               src="/images/logo1.png"
@@ -59,28 +59,28 @@ const Hero = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain w-[200px] dark:hidden"
+              className="object-contain w-[120px] lg:w-[200px] dark:hidden"
               src="/images/logo.webp"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[200px] hidden dark:block"
+              className="object-contain w-[120px] lg:w-[200px] hidden dark:block"
               src="/images/logoroyaloak.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[180px]"
+              className="object-contain w-[40px] lg:w-[110px]"
               src="/images/logo2.png"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
-              className="object-contain w-[150px] "
+              className="object-contain w-[60px] lg:w-[120px] "
               src="/images/logo3.svg"
               width={120}
               height={100}
