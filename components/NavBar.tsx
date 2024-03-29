@@ -83,7 +83,10 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className=" lg:font-bold text-[12px] lg:text-[13px]" href="/">
+              <Link
+                className=" lg:font-bold text-[12px] lg:text-[13px]"
+                href="/"
+              >
                 Home
               </Link>
             </li>
@@ -96,7 +99,10 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="lg:font-bold text-[12px] lg:text-[13px]" href="/#services">
+              <Link
+                className="lg:font-bold text-[12px] lg:text-[13px]"
+                href="/#services"
+              >
                 Services
               </Link>
             </li>
@@ -109,7 +115,10 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="lg:font-bold text-[12px] lg:text-[13px]" href="/#about">
+              <Link
+                className="lg:font-bold text-[12px] lg:text-[13px]"
+                href="/#about"
+              >
                 About
               </Link>
             </li>
@@ -122,18 +131,21 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link className="lg:font-bold text-[12px] lg:text-[13px]" href="#contact">
+              <Link
+                className="lg:font-bold text-[12px] lg:text-[13px]"
+                href="#contact"
+              >
                 Contact Us
               </Link>
             </li>
             <li>
               <div className="socials lg:hidden">
                 <div className="space-x-3 flex">
-                  {/* <SocialIcon
-                    url="https://twitter.com/KishanPras62098"
+                  <SocialIcon
+                    url="https://www.linkedin.com/company/simplifyr-in"
                     bgColor="#585858"
                     style={{ width: 30, height: 30 }}
-                  /> */}
+                  />
 
                   <SocialIcon
                     url="https://twitter.com/simplifyr_in"
@@ -156,11 +168,11 @@ const NavBar = (props: Props) => {
           <div className="space-x-5 flex items-center">
             <div className="socials hidden lg:flex">
               <div className="space-x-3 flex">
-                {/* <SocialIcon
-                  url="https://twitter.com/KishanPras62098"
+                <SocialIcon
+                  url="https://www.linkedin.com/company/simplifyr-in"
                   bgColor="#585858"
                   style={{ width: 30, height: 30 }}
-                /> */}
+                />
 
                 <SocialIcon
                   url="https://twitter.com/simplifyr_in"
