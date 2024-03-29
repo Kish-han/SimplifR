@@ -32,7 +32,7 @@ const NavBar = (props: Props) => {
   }, []);
 
   return (
-    <div id="/" className="pb-[10px]  py-5">
+    <div id="/" className="pb-[10px]  ">
       <motion.nav
         initial={{ opacity: 0, y: "-200" }}
         animate={{ opacity: 1, y: 0 }}
@@ -40,9 +40,9 @@ const NavBar = (props: Props) => {
         viewport={{ once: true }}
         className={`fixed ${
           show ? "navcarddark rounded-none" : "bg-transparent"
-        }  top-0 z-10 h-[10vh] w-full flex justify-between items-center pr-8 `}
+        }  top-0 z-10 h-[10vh] w-full flex justify-between items-center pr-8 py-4`}
       >
-        <div className="text-[20px] text-center font-bold ">
+        <div className="text-[20px] text-center font-bold">
           <Link href="/">
             <Image
               className="object-contain hidden dark:block"
