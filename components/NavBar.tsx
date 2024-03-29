@@ -43,25 +43,29 @@ const NavBar = (props: Props) => {
         }  top-0 z-10 h-[10vh] w-full flex justify-between items-center pr-8 `}
       >
         <div className="text-[20px] text-center font-bold ">
-          <Image
-            className="object-contain hidden dark:block"
-            src={"/images/mainlogo.png"}
-            width={300}
-            height={300}
-            alt="logo"
-          />
-          <Image
-            className="object-contain dark:hidden"
-            src={"/images/mainlogodark.png"}
-            width={300}
-            height={300}
-            alt="logo"
-          />
+          <Link href="/">
+            <Image
+              className="object-contain hidden dark:block"
+              src={"/images/mainlogo.png"}
+              width={300}
+              height={300}
+              alt="logo"
+            />
+            <Image
+              className="object-contain dark:hidden"
+              src={"/images/mainlogodark.png"}
+              width={300}
+              height={300}
+              alt="logo"
+            />
+          </Link>
         </div>
         <div className="w-[45%]">
           <ul
             className={`flex flex-col lg:flex-row absolute lg:relative  ${
-              navOpen ? "right-0 lg:right-0 dark:mobilenavbar mt-4" : "right-[-200px] lg:right-0 dark:bg-[#25232C]"
+              navOpen
+                ? "right-0 lg:right-0 dark:mobilenavbar mt-4"
+                : "right-[-200px] lg:right-0 dark:bg-[#25232C]"
             } top-0  h-[300px] lg:h-full items-center font-[500] lg:px-5 xl:pl-16 py-3 shadow-lg z-[50] navcard dark:bg-[#25232C]  transition-all duration-300 ease-in-out justify-around`}
           >
             <AiOutlineClose
@@ -92,10 +96,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link
-                className=" text-[12px] lg:text-[13px]"
-                href="/#services"
-              >
+              <Link className=" text-[12px] lg:text-[13px]" href="/#services">
                 Services
               </Link>
             </li>
@@ -108,10 +109,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link
-                className=" text-[12px] lg:text-[13px]"
-                href="/#about"
-              >
+              <Link className=" text-[12px] lg:text-[13px]" href="/#about">
                 About
               </Link>
             </li>
@@ -124,10 +122,7 @@ const NavBar = (props: Props) => {
                 setNavOpen(false);
               }}
             >
-              <Link
-                className=" text-[12px] lg:text-[13px]"
-                href="#contact"
-              >
+              <Link className=" text-[12px] lg:text-[13px]" href="#contact">
                 Contact Us
               </Link>
             </li>
