@@ -172,6 +172,7 @@ const NavBar = (props: Props) => {
                 <SocialIcon
                   url="https://www.linkedin.com/company/simplifyr-in"
                   bgColor="#585858"
+                  target="_blank"
                   style={{ width: 30, height: 30 }}
                 />
 
