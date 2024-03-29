@@ -52,7 +52,7 @@ const NavBar = (props: Props) => {
               alt="logo"
             />
             <Image
-              className="object-contain dark:hidden"
+              className="object-contain dark:hidden mt-2"
               src={"/images/mainlogodark.png"}
               width={300}
               height={300}
@@ -143,6 +143,7 @@ const NavBar = (props: Props) => {
                 <div className="space-x-3 flex">
                   <SocialIcon
                     url="https://www.linkedin.com/company/simplifyr-in"
+                    target="_blank"
                     bgColor="#585858"
                     style={{ width: 30, height: 30 }}
                   />
