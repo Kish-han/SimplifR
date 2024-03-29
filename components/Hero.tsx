@@ -46,35 +46,35 @@ const Hero = (props: Props) => {
           <div className="grid grid-flow-col justify-around items-center px-0 md:px-10 space-x-4 ">
             <Image
               className="object-contain w-[200px] dark:hidden"
-              src="/images/logo1.png"
+              src="/images/logo1.svg"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
               className="object-contain w-[60px] md:w-[100px] lg:w-[150px] hidden dark:block"
-              src="/images/logo1dark.png"
+              src="/images/logo1dark.svg"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
               className="object-contain w-[120px] lg:w-[200px] dark:hidden"
-              src="/images/logo.webp"
+              src="/images/logo.svg"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
               className="object-contain w-[120px] lg:w-[200px] hidden dark:block"
-              src="/images/logoroyaloak.png"
+              src="/images/logoroyaloak.svg"
               width={120}
               height={100}
               alt="logo"
             />
             <Image
               className="object-contain w-[40px] lg:w-[110px]"
-              src="/images/logo2.png"
+              src="/images/logo2.svg"
               width={120}
               height={100}
               alt="logo"
@@ -86,13 +86,6 @@ const Hero = (props: Props) => {
               height={100}
               alt="logo"
             />
-            {/* <Image
-              className="object-contain w-[280px] hidden dark:block"
-              src="/images/logo3dark.png"
-              width={120}
-              height={100}
-              alt="logo"
-            /> */}
           </div>
         </div>
       </div>

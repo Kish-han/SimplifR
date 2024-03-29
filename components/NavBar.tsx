@@ -46,14 +46,14 @@ const NavBar = (props: Props) => {
           <Link href="/">
             <Image
               className="object-contain hidden dark:block"
-              src={"/images/mainlogo.png"}
+              src={"/images/mainlogo.svg"}
               width={300}
               height={300}
               alt="logo"
             />
             <Image
               className="object-contain dark:hidden mt-2"
-              src={"/images/mainlogodark.png"}
+              src={"/images/mainlogodark.svg"}
               width={300}
               height={300}
               alt="logo"

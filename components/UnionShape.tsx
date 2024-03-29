@@ -37,7 +37,7 @@ const UnionShape = (props: Props) => {
             <div className="flex flex-col md:flex-row items-center w-[100%] mx-auto text-center md:text-left space-y-4 md:space-x-4">
               <div className="w-[100px] md:w-[300px]">
                 <Image
-                  src="/images/seal.png"
+                  src="/images/seal.svg"
                   className="-rotate-12"
                   width={150}
                   height={150}

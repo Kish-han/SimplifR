@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "SimplefyR",
+  title: "Simplifyr",
   description: "One Stop Solution",
 };
 
@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
+        <link rel="icon" href="/images/simp.png" sizes="any" />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

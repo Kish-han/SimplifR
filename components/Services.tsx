@@ -22,7 +22,7 @@ const Services = (props: Props) => {
               <TabsTrigger className="serviceCard space-x-8" value="hrms">
                 <Image
                   className="w-[20%]"
-                  src="/images/SoftwareLogo.png"
+                  src="/images/SoftwareLogo.svg"
                   width={50}
                   height={50}
                   alt="acclogo"
@@ -41,7 +41,7 @@ const Services = (props: Props) => {
               <TabsTrigger className="serviceCard space-x-8" value="account">
                 <Image
                   className="w-[20%]"
-                  src="/images/AccLogo.png"
+                  src="/images/AccLogo.svg"
                   width={50}
                   height={50}
                   alt="acclogo"
@@ -60,7 +60,7 @@ const Services = (props: Props) => {
               <TabsTrigger className="serviceCard space-x-8" value="web">
                 <Image
                   className="w-[20%]"
-                  src="/images/WebLogo.png"
+                  src="/images/WebLogo.svg"
                   width={50}
                   height={50}
                   alt="acclogo"
@@ -77,7 +77,7 @@ const Services = (props: Props) => {
               <TabsTrigger className="serviceCard space-x-8" value="hr">
                 <Image
                   className="w-[20%]"
-                  src="/images/HrLogo.png"
+                  src="/images/HrLogo.svg"
                   width={50}
                   height={50}
                   alt="acclogo"

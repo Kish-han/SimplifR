@@ -52,17 +52,17 @@ const Contact = (props: Props) => {
 
     emailjs
       .send(
-        "service_v38xqb6",
-        "template_fjfb4hz",
+        "service_g0nzovz",
+        "template_u0qm5t9",
         {
           from_name: form.name,
-          to_name: "Kishan",
+          to_name: "Simplifyr",
           from_email: form.email,
           from_phone: form.phone,
-          to_email: "Kishanprasad0901@gmail.com",
+          to_email: "simplifyr.official@gmail.com",
           message: form.message,
         },
-        "te5OTmCDa_eNPatGp"
+        "FAWfSg-1gRwf4Uljw"
       )
       .then(
         () => {
@@ -137,7 +137,7 @@ const Contact = (props: Props) => {
             <div className="flex justify-between">
               <div className="font-semibold">
                 <p>PH NO : +91 9590319320</p>
-                <p>E-MAIL : </p>
+                <p>E-MAIL : info@simplifyr.in</p>
               </div>
 
               <div className="">
