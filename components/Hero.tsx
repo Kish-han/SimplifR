@@ -22,7 +22,7 @@ const Hero = (props: Props) => {
     >
       <div className="px-10 lg:px-14 text-center space-y-[25px] pt-[70px]">
         <h1 className="heading">
-          Welcome to <span className="">SimplifyR</span>,
+          Welcome to <span className="">Simplifyr</span>,
           <br />
           where complexity meets simplicity
           <br />
