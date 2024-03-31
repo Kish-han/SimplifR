@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <link rel="icon" href="/images/simp.png" sizes="any" />
+        {/* <link rel="icon" href="favicon" sizes="any" /> */}
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
